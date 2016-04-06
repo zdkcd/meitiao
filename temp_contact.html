@@ -42,20 +42,6 @@
 		<p class="subsection-description">输入一些必要的信息，方便我们回复您</p>
 
 		<div class="row">
-
-
-<% #content_for :comment do %>
-  <%#=render file:"comments/_form.html.slim"%>
-<%# end %>
-
-<%# if File.exist?( @base_dir + 'temp_comment.html' )%>
-  <%#= render file: @base_dir + 'temp_comment.html' %>
-<% #else %>
-  <!-- <h2 class="error">没有找到搜索模版文件！</h2> -->
-<% #end %>
-
-
-
 			<!--=== Contact Form ===-->
 			<%= simple_form_for(@comment, html: {  class: 'col-sm-6 col-sm-offset-3', id: "contact-form" } ) do |f| %>
 			<!-- <form id="contact-form" class="col-sm-6 col-sm-offset-3" action="/comments" method="post" novalidate="novalidate" accept-charset="UTF-8"> -->
@@ -92,29 +78,15 @@
 			<!-- End contact-form -->
 
 		</div>
-		<div id="mes">
-			<% flash.each do |key,value|%>
-			<p>
-				<%= key%></p>
+		<div id="mes" style="display:none">
+			<% flash.each do |key,value|%>		
 			<p>
 				<%= value%></p>
 			<% end %></div>
-		<script type="text/javascript">
-		$(function(){
-			// var mes=$("#mes").hide().find("p").eq(1).text();
-			// if(mes!=null&&mes!=""){
-			// 	if(mes=="提交成功"){
-			// 		var s=confirm(mes+"是否跳转到首页");
-			// 		//s==falsh？localtion.href="home":null;
-			// 	}else{
-			// 		alert(mes);
-			// 	}
-			// }
-			$("form").removeClass("form-horizontal")
-			
-		})
-		</script>
+		
 	</div>
+	<script type="text/javascript">
+	</script>
 
 </section>
 
