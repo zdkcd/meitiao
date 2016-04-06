@@ -9,11 +9,4 @@ $(function(){
 	$(".poro_1").delegate(".link i","click",function(){
 		location.href=$(this).parent("a").attr("href");
 	})
-	
-	$("body").delegate("#contact-form button","click",function(){
-		setTimeout(function(){
-			location.href="/home"
-		},1500)
-		
-	})
 })

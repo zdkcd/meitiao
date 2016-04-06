@@ -40,6 +40,7 @@ $(document).ready(function() {
 				$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
 				setTimeout(function(){
 					$('#contact-form button').html(buttonCopy);
+					location.href="/home"
 				},2000);
 				
 			});
