@@ -9,44 +9,34 @@
 	<div class="container">
 
 		<h1 class="section-title">
-			<%=@channel.title%></h1>
+			<%= @channel.title %></h1>
 		<p class="section-description">news</p>
 
 		<div class="timeline">
-			<% x=[];x1=[];x2=[];x3=[]%>
-			<%@channel.pages.recent(4).each do |s1|%>
-			<!-- 显示的新闻数目 -->
-				<% x.push(s1.updated_at);%>
-				<% x1.push(s1.title);%>
-				<% x2.push(s1.description);%>
-				<% x3.push(get_url(s1));%>
-			<%end%>
-				<% m=0;i=x.length;i%2==0 ? i=i : i=i+1 ; (i/2).times do %>				
-					<div class='row'>
-						<% 2.times do%>
-							<div class="col-sm-6 news-item  <%= m%2==0 ?  "left" : 'right' %> scrollimation fade-up">
-								<div class="news-content">
-									<div class="date">
-										<a class="colorbox" href="/templetes/meetiao/assets/blog/bicycle_ride.jpg">
-											<img class="img-responsive" src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" alt="" />
-										</a>
-									</div>
-
-									<h2 class="news-title">
-										<%= x1[m]%></h2>
-									<div class="news-media">
-										
-									</div>
-									<p>
-										<%= x2[m]%>&hellip;</p>
-
-									<a class="read-more" href="<%= x3[m]%>">点击详情</a>&nbsp;<span style="font-size:12px"><%=x[m]%></span>
-
-								</div>
-							</div>
-						<% m=m+1 ;m>=x.length ? break : nil; end %>
+			<% @channel.pages.recent(4).each_with_index do |page,i| %>
+  			<!-- 显示的新闻数目 -->
+				<% if i % 2 == 0 %>
+				  <div class='row'>
+				<% end %>
+  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
+  					<div class="news-content">
+  						<div class="date">
+  							<a class="colorbox" href="/templetes/meetiao/assets/blog/bicycle_ride.jpg">
+  								<img class="img-responsive" src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" alt="" />
+  							</a>
+  						</div>
+  						<h2 class="news-title"><%= page.title %></h2>
+  						<div class="news-media"></div>
+  						<p><%= page.description %>&hellip;</p>
+  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
+  						&nbsp;
+  						<span style="font-size:12px"></span>
+  					</div>
+  				</div>
+  			<% if i % 2 == 1 %>
 				</div>
-				<%end%>
+				<% end %>
+			<% end %>
 		</div>
 		<p class="text-center">
 			<a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a>
