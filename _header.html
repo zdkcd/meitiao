@@ -39,7 +39,7 @@
 									<%=c.title%> <span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu text-center">
-										<% Admin::Channel.where("`short_title`!='home' and `short_title`!='about'").each do |v|%>
+										<% Admin::Channel.where("`short_title`!='home' and `short_title`!='about'and `short_title`!='contact'").each do |v|%>
 										<li><a href="/home#<%= v.short_title%>" class="scrollto"><%=v.title%></a></li>
 										<% end %>
 									</ul>
