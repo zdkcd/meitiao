@@ -1,4 +1,5 @@
-<%= render file: 'public/templetes/meetiao/_header.html' %>
+<% templete_v='templetes/'+Admin::Keystore.find(id=1).value%>
+<%= render file: 'public/'+templete_v+"/_header.html" %>
 
 <section id="services" class="white-bg padding-top-bottom">
 	<div class="container">
@@ -11,164 +12,100 @@
 				<hr/>
 				<%=raw @channel.content %>
 				<hr/>
-				
-					<div class="row" style="background: -webkit-gradient(linear, left top, left bottom, from(#adadad), color-stop(0.5, #dfdfdf), to(rgb(255, 255, 255)));padding-top:20px;">
-						<h1 class="text-center" style="color:#eee;">
-							<strong>团队介绍</strong>
-						</h1>
-						<div class="col-lg-3 col-xs-12">	
-							<div class="row">
-								<div class="col-lg-2 col-xs-3"></div>
-								<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
-									<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-										<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
-										<div style="background:#1AE6E6;color:#fff;padding:20px 0px 20px 0px;">
-											<p>
-												<h2 class="text-center">
-													<strong>文林刚</strong>
-												</h2>
-											</p>
-											<p class="text-center">
-												<strong>人力资源经理</strong>
-											</p>
-										</div>
+				<div class="row" style="background: -webkit-gradient(linear, left top, left bottom, from(#adadad), color-stop(0.5, #dfdfdf), to(rgb(255, 255, 255)));padding-top:20px;">
+					<h1 class="text-center" style="color:#eee;">
+						<strong>团队介绍</strong>
+					</h1>
+					<div class="col-lg-3 col-xs-12">	
+						<div class="row">
+							<div class="col-lg-2 col-xs-3"></div>
+							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
+								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
+									<img src="/<%= templete_v %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<div style="background:#1AE6E6;color:#fff;padding:20px 0px 20px 0px;">
+										<p>
+											<h2 class="text-center">
+												<strong>小李</strong>
+											</h2>
+										</p>
+										<p class="text-center">
+											<strong>人力资源经理</strong>
+										</p>
 									</div>
 								</div>
-								<div class="col-lg-2 col-xs-3"></div>
 							</div>
-						</div>	
-						<div class="col-lg-3 col-xs-12">	
-							<div class="row">
-								<div class="col-lg-2 col-xs-3"></div>
-								<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
-									<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-										<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
-										<div style="background:#918A6F;color:#fff;padding:20px 0px 20px 0px;">
-											<p>
-												<h2 class="text-center">
-													<strong>钟义坤</strong>
-												</h2>
-											</p>
-											<p class="text-center">
-												<strong>市场营销主管</strong>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-2 col-xs-3"></div>
-							</div>
+							<div class="col-lg-2 col-xs-3"></div>
 						</div>
-						<div class="col-lg-3 col-xs-12">	
-							<div class="row">
-								<div class="col-lg-2 col-xs-3"></div>
-								<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
-									<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-										<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
-										<div style="background:#1196EE;color:#fff;padding:20px 0px 20px 0px;">
-											<p>
-												<h2 class="text-center">
-													<strong>陈成</strong>
-												</h2>
-											</p>
-											<p class="text-center">
-												<strong>首席架构师</strong>
-											</p>
-										</div>
+					</div>	
+					<div class="col-lg-3 col-xs-12">	
+						<div class="row">
+							<div class="col-lg-2 col-xs-3"></div>
+							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
+								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
+									<img src="/<%= templete_v %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<div style="background:#918A6F;color:#fff;padding:20px 0px 20px 0px;">
+										<p>
+											<h2 class="text-center">
+												<strong>小王</strong>
+											</h2>
+										</p>
+										<p class="text-center">
+											<strong>市场营销主管</strong>
+										</p>
 									</div>
 								</div>
-								<div class="col-lg-2 col-xs-3"></div>
 							</div>
+							<div class="col-lg-2 col-xs-3"></div>
 						</div>
-						<div class="col-lg-3 col-xs-12">	
-							<div class="row">
-								<div class="col-lg-2 col-xs-3"></div>
-								<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
-									<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-										<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
-										<div style="background:#808080;color:#fff;padding:20px 0px 20px 0px;">
-											<p>
-												<h2 class="text-center">
-													<strong>罗浩</strong>
-												</h2>
-											</p>
-											<p class="text-center">
-												<strong>财务总监</strong>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-2 col-xs-3"></div>
-							</div>
-						</div>					
 					</div>
-
+					<div class="col-lg-3 col-xs-12">	
+						<div class="row">
+							<div class="col-lg-2 col-xs-3"></div>
+							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
+								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
+									<img src="/<%= templete_v %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<div style="background:#1196EE;color:#fff;padding:20px 0px 20px 0px;">
+										<p>
+											<h2 class="text-center">
+												<strong>小张</strong>
+											</h2>
+										</p>
+										<p class="text-center">
+											<strong>首席架构师</strong>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-xs-3"></div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-12">	
+						<div class="row">
+							<div class="col-lg-2 col-xs-3"></div>
+							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
+								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
+									<img src="/<%= templete_v %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<div style="background:#808080;color:#fff;padding:20px 0px 20px 0px;">
+										<p>
+											<h2 class="text-center">
+												<strong>小罗</strong>
+											</h2>
+										</p>
+										<p class="text-center">
+											<strong>财务总监</strong>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-xs-3"></div>
+						</div>
+					</div>					
+				</div>
 			</div>
-				
-
 			<div class="col-lg-3 col-md-12">
-				<%= render file:"public/templetes/meetiao/_slider.html"%>
+				<%= render file: 'public/'+templete_v+'/_slider.html'%>
 			</div>
 		</div>
-
-		
-	
-		
-
 	</div>
 </section>
-
-<!-- <section id="pricing" class="padding-top-bottom">
-	<div class="container">
-		<div class="row pricing">
-			<div class="col-lg-10 col-lg-offset-1">
-				<div class="col-sm-3 text-center scrollimation fade-left">
-					<div class="item">
-						<p class="icon">
-							<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" style="border-radius:50%;display:block;width:100%;height:100%"></p>
-						<p style="font-size: 22px;">中意坤4</p>
-						<p style="font-size: 22px;">设计师</p>
-						<p style="font-size: 22px;">程序员</p>
-						<p style="font-size: 13px;">他是一名很强大的程序员，多年的开发经验，专业的开发语言，严谨的开发习惯</p>
-					</div>
-					
-				</div>
-				<div class="col-sm-3 text-center scrollimation fade-left">
-					<div class="item">
-						<p class="icon">
-							<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" style="border-radius:50%;display:block;width:100%;height:100%"></p>
-						<p style="font-size: 22px;">中意坤4</p>
-						<p style="font-size: 22px;">设计师</p>
-						<p style="font-size: 22px;">程序员</p>
-						<p style="font-size: 13px;">他是一名很强大的程序员，多年的开发经验，专业的开发语言，严谨的开发习惯</p>
-					</div>
-					
-				</div>
-				<div class="col-sm-3 text-center scrollimation fade-left">
-					<div class="item">
-						<p class="icon">
-							<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" style="border-radius:50%;display:block;width:100%;height:100%"></p>
-						<p style="font-size: 22px;">中意坤4</p>
-						<p style="font-size: 22px;">设计师</p>
-						<p style="font-size: 22px;">程序员</p>
-						<p style="font-size: 13px;">他是一名很强大的程序员，多年的开发经验，专业的开发语言，严谨的开发习惯</p>
-					</div>
-					
-				</div>
-				<div class="col-sm-3 text-center scrollimation fade-left">
-					<div class="item">
-						<p class="icon">
-							<img src="/templetes/meetiao/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" style="border-radius:50%;display:block;width:100%;height:100%"></p>
-						<p style="font-size: 22px;">中意坤4</p>
-						<p style="font-size: 22px;">设计师</p>
-						<p style="font-size: 22px;">程序员</p>
-						<p style="font-size: 13px;">他是一名很强大的程序员，多年的开发经验，专业的开发语言，严谨的开发习惯</p>
-					</div>
-					
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section> -->
-
-<%= render file: 'public/templetes/meetiao/_footer.html' %>
+<%= render file:  'public/'+templete_v +'/_footer.html' %>
