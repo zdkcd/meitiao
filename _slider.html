@@ -4,36 +4,27 @@
 </p>
 <hr/>
 <p class="text-center">
-  <img src="/templetes/meetiao/assets/er.jpg" class="img-responsive" style="display:inline-block" title="扫码关注我们" data-toggle="tooltip" data-placement="right"></p>
+  <img src="/templetes/<%=Admin::Keystore.find(id=1).value%>/assets/er.jpg" class="img-responsive" style="display:inline-block" title="扫码关注我们" data-toggle="tooltip" data-placement="right"></p>
 <hr/>
 <h2 class="text-center"> <strong>最新资讯</strong>
 </h2>
 </p>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-<% i=0;i1=0;Admin::Page.where("`channel_id`='4'").recent(5).each do |new| %>
+<% Admin::Page.where(channel_id:'4').recent(5).each_with_index do |page,i| %>
 <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading<%=i1%>
-    ">
+  <div class="panel-heading" role="tab" id="heading<%=i%>">
     <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=i%>
-        " aria-expanded="
-        <%= i==0 ? 'true' : 'false'%>
-        " aria-controls="collapse
-        <%=i%>
-        " class="
-        <%= i==0 ? 'collapsed' : nil%>
-        ">
-        <%=new.title%></a>
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=i%>" aria-expanded="<%= i==0 ? 'true' : 'false'%>" aria-controls="collapse<%=i%>" class="<%= i==0 ? 'collapsed' : nil%>">
+        <%=page.title%></a>
     </h4>
   </div>
-  <div id="collapse<%=i%>" class="panel-collapse collapse<%= i==0 ? 'in': nil%>" role="tabpanel" aria-labelledby="heading<%=i1%>">
+  <div id="collapse<%=i%>" class="panel-collapse collapse<%#= i==0 ? "in": nil%>" role="tabpanel" aria-labelledby="heading<%=i%>">
     <div class="panel-body">
-      <a href="<%=get_url(new)%>
-        ">
-        <%= new.description%></a>
+      <a href="<%=get_url(page)%>">
+        <%= page.description%></a>
       <div class="text-right" style="font-size:12px">
-        <%= new.updated_at%></div>
+        <%= page.updated_at%></div>
     </div>
   </div>
 </div>
-<%i+=1;i1+=1;end%></div>
+<%end%></div>
