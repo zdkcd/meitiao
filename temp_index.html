@@ -1,7 +1,5 @@
-
-		<% templete_v='/templetes/'+Admin::Keystore.find(id=1).value%>
-		<%= render file: 'public/'+ templete_v+'/_header.html' %>		
-		<% nav_id=Admin::Channel.where(id:[1,2,3,4]).map(&:short_title) %>
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
+<% nav_id=Admin::Channel.where(id:[1,2,3,4]).map(&:short_title) %>
 		<!-- ==============================================
 		HEADER
 		=============================================== -->		
@@ -28,19 +26,19 @@
 							</div>
 							<div class="perspective-view">
 								<div class="single-image in-from-top-z fast">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide1-layer1.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt="" />		
 								</div>
 								<div class="single-image in-from-top-z fast delay1">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide1-layer2.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" />		
 								</div>
 								<div class="single-image in-from-top-z fast delay2">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide1-layer3.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" />		
 								</div>
 								<div class="single-image in-from-top-z fast delay3">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide1-layer4.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" />		
 								</div>
 								<div class="single-image in-from-top-z fast delay4">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide1-layer5.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer5.png" alt="" />		
 								</div>
 							</div>
 						</li>
@@ -51,25 +49,25 @@
 							</div>
 							<div class="perspective-view">
 								<div class="image-top in-from-top-z fast">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer1.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer1.png" alt="" />		
 								</div>
 								<div class="image-top in-from-top-z fast delay1">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer2.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer2.png" alt="" />		
 								</div>
 								<div class="image-top in-from-top-z fast delay2">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer3.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer3.png" alt="" />		
 								</div>
 								<div class="image-bottom in-from-top-z fast delay3">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer4.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer4.png" alt="" />		
 								</div>
 								<div class="image-bottom in-from-top-z slow delay4">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer5.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer5.png" alt="" />		
 								</div>
 								<div class="image-bottom in-from-top-z fast delay4">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer6.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer6.png" alt="" />		
 								</div>
 								<div class="image-bottom in-from-top-z fast delay5">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide2-layer7.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer7.png" alt="" />		
 								</div>
 							</div>
 						</li>
@@ -80,25 +78,25 @@
 							</div>
 							<div class="perspective-view">
 								<div class="image-right in-from-top-z fast delay1">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer1.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer1.png" alt="" />		
 								</div>
 								<div class="image-right in-from-top-z fast delay3">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer2.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer2.png" alt="" />		
 								</div>
 								<div class="image-right in-from-top-z fast delay4">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer3.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer3.png" alt="" />		
 								</div>
 								<div class="image-right in-from-top-z fast delay5">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer4.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer4.png" alt="" />		
 								</div>
 								<div class="image-left in-from-top-z fast">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer5.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer5.png" alt="" />		
 								</div>
 								<div class="image-left in-from-top-z fast delay2">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer6.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer6.png" alt="" />		
 								</div>
 								<div class="image-left in-from-top-z fast delay4">
-									<img class="img-responsive" src="<%= templete_v%>assets/slider/perspective/slide3-layer7.png" alt="" />		
+									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer7.png" alt="" />		
 								</div>
 							</div>
 						</li>
@@ -216,8 +214,8 @@
 									scrollimation fade-up">
 									<div class="news-content">
 										<div class="date">
-											<a class="colorbox" href="<%= templete_v%>assets/blog/bicycle_ride.jpg">
-												<img class="img-responsive" src="<%= templete_v%>assets/blog/bicycle_ride_thumb.jpg" alt="" />	
+											<a class="colorbox" href="/templetes/<%= @templete%>assets/blog/bicycle_ride.jpg">
+												<img class="img-responsive" src="/templetes/<%= @templete%>assets/blog/bicycle_ride_thumb.jpg" alt="" />	
 											</a>
 										</div>
 										<h2 class="news-title">
@@ -248,4 +246,4 @@
 		<!-- ==============================================
 		CONTACT
 		=============================================== -->		
-		<%= render file: 'public/'+ templete_v+'/_footer.html' %>		
+<%= render file:  'public/templetes/'+@templete+'/_footer.html' %>

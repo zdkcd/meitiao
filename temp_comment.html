@@ -1,7 +1,7 @@
-<% #templete_v='public/templetes/'+Admin::Keystore.find(id=1).value_for%>
-<%= render file:  @base_dir+'/_header.html' %>
+
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
     <div class="container">   
       <!-- Comment Boxes -->
       <%= yield(:comment) %>
     </div>
-<%= render file: @base_dir+'/_footer.html' %>
+<%= render file: 'public/templetes/'+@templete'+/_footer.html' %>

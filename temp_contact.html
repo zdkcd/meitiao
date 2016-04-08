@@ -1,5 +1,4 @@
-<% templete_v='public/templetes/'+ Admin::Keystore.find(id=1).value %>
-<%= render file: templete_v + '/_header.html' %>
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
 <section class="gray-bg padding-top-bottom">
 
 	<div class="container">
@@ -84,4 +83,4 @@
 		</div>
 	</div>
 </section>
-<%= render file: templete_v+'/_footer.html' %>
+<%= render file:  'public/templetes/'+@templete+'/_footer.html' %>

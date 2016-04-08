@@ -1,5 +1,5 @@
-<% @base_dir='templetes/'+Admin::Keystore.find(id=1).value%>
-<%= render file: @base_dir+"/_header.html" %>
+
+<%= render file: '/public/templetes/'+@templete+'/_header.html' %>
 
 <section id="services" class="white-bg padding-top-bottom">
 	<div class="container">
@@ -21,7 +21,7 @@
 							<div class="col-lg-2 col-xs-3"></div>
 							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
 								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-									<img src="/<%= @base_dir %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<img src="/templetes/<%=@templete%>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
 									<div style="background:#1AE6E6;color:#fff;padding:20px 0px 20px 0px;">
 										<p>
 											<h2 class="text-center">
@@ -42,7 +42,7 @@
 							<div class="col-lg-2 col-xs-3"></div>
 							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
 								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-									<img src="/<%= @base_dir %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<img src="/templetes/<%=@templete%>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
 									<div style="background:#918A6F;color:#fff;padding:20px 0px 20px 0px;">
 										<p>
 											<h2 class="text-center">
@@ -63,7 +63,7 @@
 							<div class="col-lg-2 col-xs-3"></div>
 							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
 								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-									<img src="/<%= @base_dir %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<img src="/templetes/<%=@templete%>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
 									<div style="background:#1196EE;color:#fff;padding:20px 0px 20px 0px;">
 										<p>
 											<h2 class="text-center">
@@ -84,7 +84,7 @@
 							<div class="col-lg-2 col-xs-3"></div>
 							<div class="col-lg-8 col-xs-6" style="border:1px solid #ADADAD">
 								<div class="" style="margin-left:-15px; margin-right:-15px;border:5px solid #fff;">
-									<img src="/<%= @base_dir %>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
+									<img src="/templetes/<%=@templete%>/assets/blog/bicycle_ride_thumb.jpg" class="img-responsive" width="100%" height="100%" style="display:block;max-height:;">
 									<div style="background:#808080;color:#fff;padding:20px 0px 20px 0px;">
 										<p>
 											<h2 class="text-center">
@@ -103,9 +103,9 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-12">
-				<%= render file: 'public/'+@base_dir+'/_slider.html'%>
+				<%= render file: '/public/templetes/'+@templete+'/_slider.html'%>
 			</div>
 		</div>
 	</div>
 </section>
-<%= render file:  'public/'+@base_dir +'/_footer.html' %>
+<%= render file: '/public/templetes/'+@templete+'/_footer.html' %>

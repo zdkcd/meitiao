@@ -1,5 +1,4 @@
-<% templete_v='public/templetes/'+Admin::Keystore.find(id=1).value%>
-<%= render file: templete_v+'/_header.html'%>
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
 <section  class="poro white-bg padding-top-bottom">
 	<div class="container poro_1">
 		<h1 class="section-title">
@@ -50,4 +49,4 @@
 	</div>
 	<!-- End container -->
 </section>
-<%= render file:templete_v+'/_footer.html'%>
+<%= render file:  'public/templetes/'+@templete+'/_fooeter.html' %>
