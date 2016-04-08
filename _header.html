@@ -15,41 +15,30 @@
 
  					<!-- ======= LOGO ========--> 		
  					<a class="navbar-brand " href="/home" title="回到首页">
- 						<!-- <span class="logo-small">
- 							<img src="/templetes/meetiao/img/logo1.png" alt=""/> 		
- 						</span> -->
  						<span class="to-top"> <i class="fa fa-arrow-up"></i>
- 						</span>
-						
- 						<!-- <%=  Admin::Keystore.where("`key`='firm_name'")[0].value%> --> 		
-
- 								
- 						<img class="img-responsive " src="/templetes/meetiao/img/logo1.png" alt="logo" style="width: 150px;height: 60px;"/> 		
- 						
+ 						</span>	
+ 						<img class="img-responsive " src="/templetes/<%=Admin::Keystore.find(id=1).value%>/img/logo1.png" alt="logo" style="width: 150px;height: 60px;"/>			
  					</a>
-
  				</div>
  				<div id="site-nav" class="navbar-collapse collapse">
  					<ul class="nav navbar-nav navbar-right">
- 						<% Admin::Channel.all.each do |c| %>
- 						<% if  c.short_title=="home"%>
+ 						<% Admin::Channel.all.each do |channel| %>
+ 						<% if  channel.short_title=="home"%>
 								<li class="nav nav-tabs">
 									<li role="presentation" class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="<%= get_url(c)%>" role="button" aria-haspopup="true" aria-expanded="false" id="run_hom">
-									<%=c.title%> <span class="caret"></span>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="<%= get_url(channel)%>" role="button" aria-haspopup="true" aria-expanded="false" id="run_hom">
+									<%=channel.title%> <span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu text-center">
-										<% Admin::Channel.where("`short_title`!='home' and `short_title`!='about'and `short_title`!='contact'").each do |v|%>
-										<li><a href="/home#<%= v.short_title%>" class="scrollto"><%=v.title%></a></li>
+										<% Admin::Channel.where(id:[2,3,4]).each do |page|%>
+										<li><a href="/home#<%= page.short_title%>" class="scrollto"><%=page.title%></a></li>
 										<% end %>
 									</ul>
 									</li>
 								</li>
-							
-						
 	 					<% else %>
 	 						<li>
-								<a href="<%= get_url(c)%>"><%= c.title %></a>
+								<a href="<%= get_url(channel)%>"><%= channel.title %></a>
 	 						</li>
  						<% end ;end%>
 

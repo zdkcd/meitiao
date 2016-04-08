@@ -1,8 +1,7 @@
-<%= render file: 'public/templetes/meetiao/_header.html' %>
 
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
     <div class="container">   
       <!-- Comment Boxes -->
       <%= yield(:comment) %>
     </div>
-
-<%= render file: 'public/templetes/meetiao/_footer.html' %>
+<%= render file: 'public/templetes/'+@templete'+/_footer.html' %>

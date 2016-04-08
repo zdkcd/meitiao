@@ -1,23 +1,23 @@
  
-
+		<% templete_v='/templetes/'+Admin::Keystore.find(id=1).value%>
 		<!-- ==============================================
 		Favicons
 		=============================================== -->
-		<link rel="shortcut icon" href="/templetes/meetiao/assets/favicon.ico">
-		<link rel="apple-touch-icon" href="/templetes/meetiao/assets/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/templetes/meetiao/assets/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/templetes/meetiao/assets/apple-touch-icon-114x114.png">
+		<link rel="shortcut icon" href="<%= templete_v%>/assets/favicon.ico">
+		<link rel="apple-touch-icon" href="<%= templete_v%>/assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="<%= templete_v%>/assets/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="<%= templete_v%>/assets/apple-touch-icon-114x114.png">
 		
 		<!-- ==============================================
 		CSS
 		=============================================== -->    
-		<link rel="stylesheet" href="/templetes/meetiao/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/templetes/meetiao/css/font-awesome.css">
-		<link rel="stylesheet" href="/templetes/meetiao/css/flexslider.css">
-		<link rel="stylesheet" href="/templetes/meetiao/css/sequencejs-qubico.css" />
-		<link rel="stylesheet" href="/templetes/meetiao/css/colorbox.css" />
-		<link rel="stylesheet" href="/templetes/meetiao/css/qubico.css">
-		<link rel="stylesheet" href="/templetes/meetiao/css/qubico-red.css">
+		<link rel="stylesheet" href="<%= templete_v%>/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<%= templete_v%>/css/font-awesome.css">
+		<link rel="stylesheet" href="<%= templete_v%>/css/flexslider.css">
+		<link rel="stylesheet" href="<%= templete_v%>/css/sequencejs-qubico.css" />
+		<link rel="stylesheet" href="<%= templete_v%>/css/colorbox.css" />
+		<link rel="stylesheet" href="<%= templete_v%>/css/qubico.css">
+		<link rel="stylesheet" href="<%= templete_v%>/css/qubico-red.css">
 		
 		
 		<!-- ==============================================
@@ -31,10 +31,10 @@
 		=============================================== -->
 			
 		<!--[if lt IE 9]>
-			<script src="/templetes/meetiao/js/respond.min.js"></script>
+			<script src="<%= templete_v%>/js/respond.min.js"></script>
 		<![endif]-->
 		<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="/templetes/meetiao/js/libs/modernizr.min.js"></script>
+		<script type="text/javascript" src="<%= templete_v%>/js/libs/modernizr.min.js"></script>
 
 		
 		

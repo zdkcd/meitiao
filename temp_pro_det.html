@@ -1,12 +1,12 @@
-<%= render file:'public/templetes/meetiao/_header.html'%>
-
+<%= render file: 'public/templetes/'+@templete+'/_header.html' %>
+<!--container header -->
 <header class="padding-top container text-right">
 	<div class="col-md-8 h3">
 		案例：<strong><%= @page.title %></strong><br>
 		<a href="<%= @page.external_url%>" style="font-size:14px;text-decoration:1px"><%= @page.external_url%></a>
 	</div>
 </header>
-<!--End header -->
+<!--End container header -->
 
 <div class="container">
 	<div class="row">
@@ -22,16 +22,17 @@
 				月
 				<%= @page.created_at.day %>
 				日
-				<br><br>
+				<br>
 				<strong>关键词:</strong>
-				<%= @page.keywords.length< 1 ? "无" : @page.keywords%></p>
-			
+				<%= @page.keywords.length< 1 ? "无" : @page.keywords%>
+			</p>
 			<hr/>
-			<%=raw @page.content %></div>
+			<%=raw @page.content %>
+		</div>
 		<div class="col-lg-3 col-md-12">
-			<%= render file:'public/templetes/meetiao/_slider.html'%></div>
+			<%= render file: 'public/templetes/'+@templete+'/_slider.html' %>
+		</div>
 	</div>
-
 </div>
 
-<%= render file:'public/templetes/meetiao/_footer.html'%>
+<%= render file: 'public/templetes/'+@templete+'/_footer.html' %>

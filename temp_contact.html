@@ -1,4 +1,4 @@
-<%= render file: 'public/templetes/meetiao/_header.html' %>
+<%= render file:  'public/templetes/'+@templete+'/_header.html' %>
 <section class="gray-bg padding-top-bottom">
 
 	<div class="container">
@@ -64,7 +64,8 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-message">信息</label>
 							<div class="controls">
-								<textarea id="contact-message" name="comment[content]"  placeholder="请输入信息！" class="form-control requiredField label_better" rows="6" data-error-empty="请输入信息！"></textarea>
+								<textarea id="contact-message" name="comment[content]"  placeholder="请输入信息！" class="form-control requiredField label_better" rows="6" data-error-empty="请输入信息！">
+								</textarea>
 								<i class="fa fa-comment"></i>
 							</div>
 						</div><!-- End textarea -->
@@ -73,20 +74,13 @@
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 					<!-- </form> -->
 					<!-- End contact-form -->
-			<% end%>
-
-			<!-- End contact-form -->
-			<script type="text/javascript">
-				$(function(){
-					$("form").removeClass("form-horizontal")
-				})
-
-			</script>
-	
+			<% end%>	
+				<script type="text/javascript">
+					$(function(){
+						$("form").removeClass("form-horizontal")
+					})
+				</script>
 		</div>
 	</div>
-	
-
 </section>
-
-<%= render file: 'public/templetes/meetiao/_footer.html' %>
+<%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
