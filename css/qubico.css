@@ -957,10 +957,12 @@ a:focus,
 }
 
 .team-member .member-details {
+    margin:20px 0 0 20px;
     position:relative;
     padding:30px;
     padding-left:100px;
     background:#f5f5f5;
+    border-radius:10px;
     box-shadow:5px 5px 0 rgba(0,0,0,0.08);
     -webkit-transition:all .3s ease-out;
     transition:all .3s ease-out;
@@ -1022,7 +1024,8 @@ a:focus,
     position:absolute;
     left:20px;
     top:50px;
-    font-size:150px;
+    font-size:120px;
+    font-weight:800;
     line-height:60px;
     font-family:Arial;
     color:#5cc9df;
