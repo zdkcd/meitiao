@@ -4,54 +4,94 @@
 		HEADER
 		=============================================== -->		
 		<header id="<%= nav_id[0]%>" class="jumbotron">
-
 			<div id="sequence-theme">
-
 				<div id="sequence" class="perspective multilayer">
-
 					<ul class="controls">
 						<li class="sequence-prev"> <i class="fa fa-angle-left fa-fw"></i>
 						</li>
 						<li class="sequence-next"> <i class="fa fa-angle-right fa-fw"></i>
 						</li>
 					</ul>
-
 					<ul class="sequence-canvas container">
-						<% Admin::Page.where().all.each do || %>
-						<li>
-							<div class="message slow">
-								<h2 class="title">专业网站建设</h2>
-								<p>
-									专注网站建设,为您提供业界领先的网站制作,网站设计,由资深设计师,专业架构师,经验丰富的开发团队,完善的售后服务全程为您护航
-								</p>
-							</div>
-							<div class="perspective-view">
-								<div class="single-image in-from-top-z fast">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt="" />		
+						<% Admin::Page.where("`channel_id`='9'").all.each do |page| %>
+							<li>
+								<div class="message slow">
+									<h2 class="title in-from-left slow"><%= page.title %></h2>
+									<p class="in-from-bottom slow delay1"><%= page.description %></p>
 								</div>
-								<div class="single-image in-from-top-z fast delay1">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" />		
+								<div class="perspective-view">
+									<div class="image-top in-from-top-z fast">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer1.png" alt="" />		
+									</div>
+									<div class="image-top in-from-top-z fast delay1">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer2.png" alt="" />		
+									</div>
+									<div class="image-top in-from-top-z fast delay2">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer3.png" alt="" />		
+									</div>
+									<div class="image-bottom in-from-top-z fast delay3">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer4.png" alt="" />		
+									</div>
+									<div class="image-bottom in-from-top-z slow delay4">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer5.png" alt="" />		
+									</div>
+									<div class="image-bottom in-from-top-z fast delay4">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer6.png" alt="" />		
+									</div>
+									<div class="image-bottom in-from-top-z fast delay5">
+										<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer7.png" alt="" />		
+									</div>
 								</div>
-								<div class="single-image in-from-top-z fast delay2">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay3">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay4">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer5.png" alt="" />		
-								</div>
-							</div>
-						</li>
+							</li>
 						<% end %>
-						
 					</ul>
-
 				</div>
-
 			</div>
 		</header>
 		<!--End header -->		
+		<!-- ==============================================
+		打造更省钱 更赚钱的餐饮行业营销型网站
+		=============================================== -->	
+		<div class="container">
+			<p>
+				<h2 class="text-center" style="color:#333;">
+					<strong>打造更赚钱的<span style="font-size:40px;color:#F05557;">餐饮行业营销型网站</span></strong>
+					<span style="display:block;color:#333;font-size:25px;font-weigth:normal;">美调科技 营销型网站始创者、标准制定者</span>
+				</h2>
+			</p>
+			<div class="row">
+				<div class="col-lg-6 col-xs-12">
+					<img src="/templetes/meetiao/assets/dda.jpg" class="img-responsive">
+				</div>
+				<div class="col-lg-6 col-xs-12" style="padding-right:150px;">
+					<p class="text-right" style="color:#bcbcbc;font-size:25px;text-transform: uppercase;">more money</p>
+					<p class="text-right" style="font-size:40px;color:#000;"><strong>更赚钱</strong><i class=""></i></p>
+					<p class="text-right" style="font-size:25px;color:#000;">同样的流量更多的询盘<br>比传统网页高20倍</p>
+					<p>
+						<span class="text-right" style="display:block;color:#696969;font-size:15px;">
+							什么产品、卖给谁、怎么卖
+							<i class="fa fa-star"></i>
+						</span>
+						<span class="text-right" style="display:block;color:#696969;font-size:15px;">
+							你的优势、客户的好处
+							<i class="fa fa-star"></i>
+						</span>
+						<span class="text-right" style="display:block;color:#696969;font-size:15px;">
+							六大核心定位系统快速锁定、打动你的目标客户
+							<i class="fa fa-star"></i>
+						</span>
+						<span class="text-right" style="display:block;color:#696969;font-size:15px;">
+							把空洞的“高大上”转变为切实的营销力
+							<i class="fa fa-star"></i>
+						</span>
+						<span class="text-right" style="display:block;color:#696969;font-size:15px;">
+							吸引询盘，让你更赚钱
+							<i class="fa fa-star"></i>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
 
 		<!-- ==============================================
 		SERVICES
@@ -89,7 +129,6 @@
 				</p>
 			</div>
 		</section>
-
 		<!-- ==============================================
 		PORTFOLIO
 		=============================================== -->		
@@ -134,60 +173,6 @@
 			<!-- End container -->		
 
 			<!--End #project-preview panel-->		
-
 		</section>
 
-		<!-- ==============================================
-		NEWS
-		=============================================== -->		
-
-		<section id="<%= nav_id[3]%>" class="white-bg padding-top-bottom">
-			<div class="container">
-				<h1 class="section-title">
-					<%= Admin::Channel.where(short_title:'news')[0].title%></h1>
-				<p class="section-description">我们的足迹</p>
-				<div class="timeline">
-					<div class="date-title">
-						<span>最新资讯</span>
-					</div>					
-					<%Admin::Page.where(channel_id:4).recent(2).each_with_index do |page,i|%>
-						<% if i%2==0%>
-							<div class='row'>
-						<% end%>
-								<div class="col-sm-6 news-item  <%= i%2==0 ?  "left" : 'right' %>
-									scrollimation fade-up">
-									<div class="news-content">
-										<div class="date">
-											<a class="colorbox" href="/templetes/<%= @templete%>/assets/blog/bicycle_ride.jpg">
-												<img class="img-responsive" src="/templetes/<%= @templete %>/assets/blog/bicycle_ride_thumb.jpg" alt="" />	
-											</a>
-										</div>
-										<h2 class="news-title">
-											<%= page.title%>
-										</h2>
-										<div class="news-media"></div>
-										<p>
-											<%= page.description.truncate(60)%>&hellip;
-										</p>
-										<a class="read-more" href="<%= get_url(page)%>">点击详情
-										</a>
-										&nbsp;
-										<span style="font-size:12px">
-											<%= page.updated_at%>
-										</span>
-									</div>
-								</div>
-						<% if i%2==1%>
-							</div>
-						<% end%>
-					<%end%>
-				</div>
-				<p class="text-center">
-					<a class="btn btn-qubico" href="<%=Admin::Channel.find_by(short_title:'news').short_title%>" title="点击-更多资讯"><i class="fa fa-plus-circle"></i>更多资讯</a>
-				</p>
-			</div>
-		</section>
-		<!-- ==============================================
-		CONTACT
-		=============================================== -->		
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
