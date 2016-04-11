@@ -2,6 +2,12 @@
 <% nav_id=Admin::Channel.where(id:[1,2,3,4]).map(&:short_title) %>
 		<!-- ==============================================
 		HEADER
+<<<<<<< HEAD
+		=============================================== -->	
+		
+		<header id="home" class="jumbotron">
+			<%= render file:'public/templetes/meetiao/_banner.html' %>
+=======
 		=============================================== -->		
 		<header id="<%= nav_id[0]%>" class="jumbotron">
 
@@ -105,9 +111,10 @@
 				</div>
 
 			</div>
+>>>>>>> b25eac62cdab4055b026bf6f34cfc94dbdfec900
 		</header>
 		<!--End header -->		
-
+		
 		<!-- ==============================================
 		SERVICES
 		=============================================== -->		
