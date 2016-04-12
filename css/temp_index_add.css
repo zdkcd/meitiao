@@ -1,0 +1,8 @@
+.do-all{padding-top:50px;max-height:356px;}
+.do-all:hover{background: #5cc9df;color: #fff;border: 2px solid #dfdfdf;}
+.do-all:hover .do-p-all{color:#fff;}
+.icon-box{padding-bottom:30px;color:#5cc9df;}
+.do-all:hover .icon-box{color: #fff;}
+.icon-pages{font-size:70px;}
+.do-p-all{color:#5cc9df;font-size:30px;}
+.do-p-a2{text-indent:2em;font-size:17px;}

@@ -1,0 +1,9 @@
+#about-shadow{padding-top: 30px}
+#about-shadow:hover{box-shadow: 1px 4px 30px;transition:all 0.3s linear;}
+.about-img1{margin:0 auto;cursor:pointer;border-radius:50%;}
+.about-img2{margin:0 auto;cursor:pointer; border-radius:50%;}
+.about-span1{color:#333;font-size:30px;}
+.about-span2{color:#333;font-size:30px;}
+.about-h5-one{margin-bottom:0px;}
+.about-content{text-indent:2em;}
+.about-modal-mar{margin-top:160px;}
