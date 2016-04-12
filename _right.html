@@ -1,0 +1,40 @@
+<!-- 侧边栏 -->
+<style type="text/css">
+	.suspend{width:160px;height:198px;position:fixed;top:60%;right:-120px;z-index:9999;}
+	.suspend ul{padding: 0px;text-align: center;margin:11px 0px 0px 0px;}
+	.suspend .text1{line-height: 50px}
+	.suspend .text1:hover{color: #3c84c6;}
+	.suspend .m1:hover{cursor:pointer;}
+</style>
+<div class="suspend">
+	<div class="col-md-1 col-lg-1 col-sm-1 col-xs-1" style="padding-left:0px; width:40px;height:200px;"><img src="/templetes/meetiao/images/customer_service.png"></div>
+	<div class="col-md-3 col-ls-1 col-sm-1 col-xs-1" style="padding-left:0px;padding-right:0px;width:120px;height:180px;background: #fff">
+		<ul type="none" class="m1" style="border-bottom:1px solid #ccc;width:100%;height:49%;">
+			<li><a href=""><img src="/templetes/meetiao/images/icon_qq_gray.png"></a></li>
+			<li class="text1">详细咨询</li>
+		</ul>
+		<ul type="none" style="width:100%;height:50%;background: #fff">
+			<li><img src="/templetes/meetiao/images/phone.png"></li>
+			<li><%= Admin::Keystore.find_by(id:5).value%></li>
+			<li >（7x24小时）</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript"> 
+$(function(){
+	$(".suspend").mouseover(function() {
+        $(this).stop();
+        $(this).animate({right: "0"}, 400);
+    })
+    $(".suspend ul").eq(0).mouseover(function() {
+        $(this).find("img").attr("src","/templetes/meetiao/images/icon_qq.png")
+    })
+     $(".suspend ul").eq(0).mouseout(function() {
+     	 $(this).find("img").attr("src","/templetes/meetiao/images/icon_qq_gray.png")
+	});
+    $(".suspend").mouseout(function() {
+        $(this).stop();
+        $(this).animate({right: "-120px"}, 400);
+    });
+});
+</script>

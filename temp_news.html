@@ -1,5 +1,5 @@
 <%= render file:  'public/templetes/'+@templete+'/_header.html' %>
-
+<%= render file:  'public/templetes/'+@templete+'/_right.html' %>
 <!-- ==============================================
 		NEWS
 		=============================================== -->
@@ -20,9 +20,9 @@
 				<% end %>
   				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
   					<div class="news-content">
-  						<div class="date">
-  							<a class="colorbox" href="/templetes/<%= @templete%>/assets/blog/bicycle_ride.jpg">
-  								<img class="img-responsive" src="/templetes/<%= @templete%>/assets/blog/bicycle_ride_thumb.jpg" alt="" />
+  						<div class="date"  style="border:1px solid #ccc">
+  							<a class="colorbox" href="<%= page.image_path%>">
+  								<img class="img-responsive" src="<%= page.image_path%>" alt=""/>
   							</a>
   						</div>
   						<h2 class="news-title"><%= page.title %></h2>

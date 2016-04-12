@@ -12,34 +12,49 @@
 				<hr/>
 				<%=raw @channel.content %>
 					<h1 style="color:#666;">
-						<strong>团队介绍</strong>
+						团队介绍:
 					</h1>
 					<hr/>
-					<div class="row"><div class="online" style="overflow: hidden;margin: auto;">
-							<% Admin::Page.where("`channel_id`='10'").all.each do |page| %>
-									<div class="col-lg-6 col-xs-12 text-center">
-										<div style="float: left;margin-right: 20px;padding-right: 15px;height: 95px;background: url(/templetes/meetiao/assets/online_bg.jpg) repeat-x 0 bottom;">
-											<div class="img" style="float: left;text-align: center;width: 70px;height: 70px;">
-												<a href="" title="刘贝锋" target="_blank">
-													<img src="/templetes/meetiao/assets/apple-touch-icon-72x72.png" title="刘贝锋" alt="刘贝锋" class="img-responsive" style="border: 2px solid #fff;border-radius: 50%;width: 70px;height: 70px;"></a>
-												<span style="list-style: none;margin: 0;padding: 0;font-weight: normal;">
-													<a href="http://wpa.qq.com/msgrd?v=3&amp;site=qq&amp;menu=yes&amp;uin=490946159" title="刘贝锋" target="_blank" style="display: block;color: #333;font-size: 14px;width: 75px;height: 20px;background: #1bd6c6;"><%= page.title%></a>
-												</span>
-											</div>
-											<div class="info" style="float: right; text-align: center; line-height: 20px;margin-top: 35px;margin-left:15px;">
-												<a href="http://wpa.qq.com/msgrd?v=3&amp;site=qq&amp;menu=yes&amp;uin=136065160" title="高级客户经理" target="_blank" style="display: block;font-size: 14px;width: 165px;height: 20px;color: #fff;background: #1bd6c6;text-align: center;"><%= page.description %></a>
-												<p style="height: 20px;text-align: center;font-size: 14px;background: #fff;margin-top:0px;margin-bottom:0px;"><%= page.keywords %></p>
-												<span style="list-style: none;font-weight: normal;font-size: 12px;color:#999;">|---本人接听---|</span>
-											</div>										
-										</div>
-									</div>
-							<% end %>
+					<div class="row">
+					<% Admin::Page.where("`channel_id`='10'").all.each do |page| %>
+						<div id="about-shadow" class="col-lg-4">
+							<img src="<%= page.image_path %>" class="img-responsive about-img1" data-toggle="modal" data-target="#myModal">
+							<p class="text-center"><span class="about-span1"><%= page.title %></span><br/><%= page.keywords %></p>
+							<!-- 弹出层 -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						    	<div class="modal-dialog" role="document">
+						    		<div class="modal-content about-modal-mar">
+						    			<div class="modal-header">
+						    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						    					<span aria-hidden="true">&times;</span>
+						    				</button>
+												<img src="/templetes/meetiao/assets/tou/tou1.jpg" class="img-responsive about-img2"data-toggle="modal" data-target="#myModal">
+											<h4 class="modal-title text-center" id="myModalLabel">
+												<span class="about-span2"><%= page.title %></span>
+											</h4>
+												<h5 class="about-h5-one">
+												<span>个人简介:</span>
+												</h5>
+						    			</div>
+						    			<div class="modal-body">
+						    				<p class="about-content"><%= page.description %></p>
+						    			</div>
+						    		</div>
+						    	</div>
+					    	</div>
 						</div>
+					<% end %>
 					</div>
-			
+
+					
+					
+
 			</div>
+
 			<div class="col-lg-3 col-md-12">
 				<%= render file: '/public/templetes/'+@templete+'/_slider.html'%>
+				<!-- Button trigger modal -->    
+    			
 			</div>
 		</div>
 	</div>
