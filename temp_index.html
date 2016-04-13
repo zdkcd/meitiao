@@ -322,7 +322,7 @@
 				
 
 				<p class="text-center">		
-					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.where(id:'3'))%>">
+					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.find_by(id:3))%>">
 						<i class="fa fa-plus-circle"></i>
 						更多案例
 					</a>
