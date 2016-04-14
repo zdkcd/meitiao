@@ -14,7 +14,7 @@ b{
 body{
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 	font-size:25px;
-	color:#7a7c7f;
+	color:#333;
 	font-weight:300;
 	overflow-x:hidden;
 
@@ -38,7 +38,19 @@ p {
     font-weight:300;
     margin-bottom:20px;
 }
-
+/*新增全局样式*/
+span{
+    
+    font-size:20px;
+    color:#000;
+}
+b{
+    color:#F05557;
+}
+i{
+ 
+}
+/*end*/
 .lead {
     font-size:20px;
     line-height:28px;

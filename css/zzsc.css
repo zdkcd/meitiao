@@ -1,4 +1,6 @@
+
 /*解决方案*/
+
 	.do-all{padding-top:50px;max-height:400px;height: 400px; box-shadow: 1px 1px 20px;}
 	.all1{border-top-left-radius:15px; border-bottom-left-radius:15px;}
 	.all4{border-top-right-radius:15px; border-bottom-right-radius:15px;}
@@ -8,10 +10,11 @@
 	.icon-pages{font-size:70px;color: #38A5DB;}
 	.do-all:hover .all1-head{color:#fff;}
 	.icon-box{padding-bottom:30px;}
-	.do-p-a2{text-indent:2em;}
+	.do-p-a2{text-indent:2em;font-size: 14px;line-height: 25px;}
 	.more-box-span1{display:block;}
 	.more-box-p2{color:#ec2c2c;}
-	.do-p-a2{font-size: 14px;line-height: 25px;}
+
+
 	/*公用样式*/
 	.more-all-head{color:#ec2c2c;}
 	.more-all-spans{display:block;}
@@ -31,8 +34,21 @@
 	.more-good{margin-top:30px;padding-top:20px}
 	.more-good-img{padding-top: 30px;}
 	.good-num{font-size: 50px;line-height: 40px;vertical-align:middle;}
+
 /*end*/
 /*about*/
+
+	#about-shadow{padding-top: 30px}
+	#about-shadow:hover{box-shadow: 1px 4px 30px;transition:all 0.3s linear;}
+	.about-img1{margin:0 auto;cursor:pointer;border-radius:50%;}
+	.about-img2{margin:0 auto;cursor:pointer; border-radius:50%;}
+	.about-span1{color:#333;}
+	.about-span2{color:#333;}
+	.about-h5-one{margin-bottom:0px;}
+	.about-content{text-indent:2em;}
+	.about-modal-mar{margin-top:160px;}
+/*end
+
 #about-shadow{padding-top: 30px}
 #about-shadow:hover{box-shadow: 1px 4px 30px;transition:all 0.3s linear;}
 .about-img1{margin:0 auto;cursor:pointer;border-radius:50%;}
@@ -43,4 +59,5 @@
 .about-content{text-indent:2em;}
 .about-modal-mar{margin-top:160px;}
 /*end*/
+
 
