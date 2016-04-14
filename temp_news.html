@@ -13,7 +13,7 @@
 		<p class="section-description">news</p>
 
 		<div class="timeline">
-			<% @channel.pages.recent(4).each_with_index do |page,i| %>
+			<% @channel.pages.recent(100).each_with_index do |page,i| %>
   			<!-- 显示的新闻数目 -->
 				<% if i % 2 == 0 %>
 				  <div class='row'>
@@ -39,7 +39,7 @@
 			<% end %>
 		</div>
 		<p class="text-center">
-			<a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a>
+			<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
 		</p>
 		<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
 	</div>
