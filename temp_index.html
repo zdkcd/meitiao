@@ -23,8 +23,7 @@
 							<div class="message slow">
 
 								<h2 class="title in-from-top slow">美调科技</h2>
-								
-								<p class="in-from-bottom slow delay1">美调科技是国内首家专注于餐饮供应链企业互联网营销系统建设的互联网公司，公司聚集了国内调味品行业营销专家，美国硅谷创新技术团队，知名网络公司精英等优秀人才。让您的网络营销方案不同凡响！！！</p>
+								<h3 class="in-from-bottom slow delay1">美调科技是国内首家专注于餐饮供应链企业互联网营销系统建设的互联网公司，公司聚集了国内调味品行业营销专家，美国硅谷创新技术团队，知名网络公司精英等优秀人才。让您的网络营销方案不同凡响！！！</h3>
 								
 							</div>
 							<div class="perspective-view">
@@ -48,7 +47,7 @@
 						<li>
 							<div class="message slow">
 								<h2 class="title in-from-top slow">互联网+餐饮</h2>
-								<p class="in-from-bottom slow delay1">美调让您的企业迅速玩转互联网！！！.互联网世界是平的，没有区域市场之分。传统时代，还可以做区域品牌老大，互联网上没有这个机会。</p>
+								<h3 class="in-from-bottom slow delay1">美调让您的企业迅速玩转互联网！！！.互联网世界是平的，没有区域市场之分。传统时代，还可以做区域品牌老大，互联网上没有这个机会。</h3>
 							</div>
 							<div class="perspective-view">
 								<div class="image-top in-from-top-z fast">
@@ -68,7 +67,7 @@
 						<li>
 							<div class="message slow">
 								<h2 class="title in-from-left slow">网络营销</h2>
-								<p class="in-from-left slow delay1">互联网营销的时代已经到来，不做网络营销的公司未来将会被淘汰。</p>
+								<h3 class="in-from-left slow delay1">互联网营销的时代已经到来，不做网络营销的公司未来将会被淘汰。</h3>
 							</div>
 							<div class="perspective-view">
 								<div class="image-right in-from-top-z fast delay1">
@@ -105,6 +104,8 @@
 		<!-- ==============================================
 		SERVICES
 		=============================================== -->
+	
+
 		<!-- ==============================================
 		打造更省钱 更赚钱的餐饮行业营销型网站
 		=============================================== -->	
@@ -250,7 +251,9 @@
 							<i class="fa fa-link icon-pages"></i>
 						</div>
 						<h3 class="text-center all1-head"><strong>一站式服务</strong></h3>
-						<span>从网站建设到网络营销启动直至运营，提供1对1专属服务。7X24小时服务随时响应，主动定期的电话回访，跟踪解决客户的问题，网站有问题，我们会协助您解决。</span>
+
+						<p class="do-p-a2">从网站建设到网络营销启动直至运营，提供1对1专属服务。7X24小时服务随时响应，主动定期的电话回访，跟踪解决客户的问题，网站有问题，我们会协助您解决。</p>
+
 					</div>
 					<div class="col-lg-3 do-all">
 						<div class="text-center icon-box">
@@ -277,6 +280,18 @@
 			</div>
 		</section>
 		
+
+<!-- ==========================================
+	服务
+=================================== -->
+<section id="<%= nav_id[1]%>" class="white-bg padding-top-bottom">
+	<h2 class="text-center section-title" style="color:#333;">
+		<strong>美调的服务更加<b style="color:#F05557;"></b><b style="color:#F05557;">专业系统</b></strong>
+		<p><span style="font-size:17px;">MT tone more professional service system </span></p>
+	</h2>
+	<img src="/templetes/meetiao/images/setup.png" alt="" class="img-responsive">
+</section>
+
 		<!-- ==============================================
 		PORTFOLIO
 		=============================================== -->		
@@ -311,7 +326,7 @@
 				
 
 				<p class="text-center">		
-					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.where(id:'3'))%>">
+					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.find_by(id:3))%>">
 						<i class="fa fa-plus-circle"></i>
 						更多案例
 					</a>
