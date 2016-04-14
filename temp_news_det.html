@@ -16,13 +16,16 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9 col-md-12">
-			
-
-			<hr/>
-			<%=raw @page.content %></div>
+		<hr/>
+			<%=raw @page.content %>
+		
+		<%= render file:  'public/templetes/'+@templete+'/_baidu_share.html' %>
+		<%= render file: 'public/templetes/'+@templete+'/_duoshuo.html', locals: {duoshuo_key: 'chemar'} %>
+		</div>
 		<div class="col-lg-3 col-md-12">
-			<%= render file:'public/templetes/'+@templete+'/_slider.html'%></div>
+			<%= render file:'public/templetes/'+@templete+'/_slider.html'%>
+		</div>
 	</div>
-</div>
 
+</div>
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
