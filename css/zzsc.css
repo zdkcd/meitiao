@@ -1,71 +1,48 @@
-/*main*/
-.do-all{padding-top:50px;max-height:356px;}
-.do-all:hover{background: #5cc9df;color: #fff;}
-.do-all:hover .do-p-all{color:#fff;}
-.icon-box{padding-bottom:30px;}
-.icon-pages{font-size:70px;}
-.do-p-all{color:#000;font-size:30px;}
-.do-p-a2{text-indent:2em;font-size:17px;}
+	/*解决方案*/
+	.do-all{padding-top:50px;max-height:400px;height: 400px; box-shadow: 1px 1px 20px;}
+	.all1{border-top-left-radius:15px; border-bottom-left-radius:15px;}
+	.all4{border-top-right-radius:15px; border-bottom-right-radius:15px;}
+	.do-all:hover{background: #38A5DB;color: #fff;}
+	.do-all:hover .do-p-all{color:#fff;}
+	.do-all:hover .icon-pages{color: #fff;}
+	.icon-pages{font-size:70px;color: #38A5DB;}
+	.do-all:hover .all1-head{color:#fff;}
+	.icon-box{padding-bottom:30px;}
+	.do-p-a2{text-indent:2em;}
+	.more-box-span1{display:block;}
+	.more-box-p2{color:#ec2c2c;}
+	/*公用样式*/
+	.more-all-head{color:#ec2c2c;}
+	.more-all-spans{display:block;}
+	.more-all-headp{}
+	.more-lineheight{line-height: 25px;}
+	/*互联网+*/
+	.more-net-box{padding-top: 40px;}
+	.more-money-box{padding-top: 30px}
+	.more-land-box{padding-top: 45px;}
+	.more-good-box{padding-top: }
+	/*更赚钱*/
+	.more-money{margin-top:30px;padding-top:20px; background:;}
+	.more-money-box{padding-top: 50px;}
+	/*更落地*/
+	.more-land{margin-top:30px;}
+	/*好口碑*/
+	.more-good{margin-top:30px;padding-top:20px}
+	.more-good-img{padding-top: 30px;}
+	.good-num{font-size: 50px;line-height: 40px;vertical-align:middle;}
+	
+
+	
 /*end*/
 
 /*about*/
-#about-shadow{padding-top: 30px}
-#about-shadow:hover{box-shadow: 1px 4px 30px;transition:all 0.3s linear;}
-.about-img1{margin:0 auto;cursor:pointer;border-radius:50%;}
-.about-img2{margin:0 auto;cursor:pointer; border-radius:50%;}
-.about-span1{color:#333;font-size:30px;}
-.about-span2{color:#333;font-size:30px;}
-.about-h5-one{margin-bottom:0px;}
-.about-content{text-indent:2em;}
-.about-modal-mar{margin-top:160px;}
-/*end*/
-#featured-area {
-
-	height: 337px;
-	width: 950px; padding-top:50px;
-	margin:0px auto;
-}
-#featured-area img{ border:none}
-
-
-.roundabout-holder {
-	list-style:none; 
-	width:100%; 
-	height:100%; 
-	margin:0px auto;
-}
-
-.roundabout-moveable-item {
-	font-size:12px!important;
-	height:450px; width:1000px;
-	cursor:pointer; padding:5px;
-	border:1px solid #aaaaaa;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	background:#f9f9f9;
-}
-
-.roundabout-moveable-item img {
-	height:100%;
-	width:100%;
-	background-color:#FFFFFF;
-	margin:0;
-}
-
-.roundabout-in-focus {
-	cursor:auto;
-}
-
-.roundabout-in-focus:hover {
-	-webkit-box-shadow:0px 0px 20px #787878;
-	-moz-box-shadow:0px 0px 20px #787878;
-	background:#f9f9f9;
-}
-.roundabout a:active, .roundabout a:focus, .roundabout a:visited {
-	outline:none;
-	text-decoration:none;
-}
-
-.roundabout li {
-	margin:0
-}
+	#about-shadow{padding-top: 30px}
+	#about-shadow:hover{box-shadow: 1px 4px 30px;transition:all 0.3s linear;}
+	.about-img1{margin:0 auto;cursor:pointer;border-radius:50%;}
+	.about-img2{margin:0 auto;cursor:pointer; border-radius:50%;}
+	.about-span1{color:#333;}
+	.about-span2{color:#333;}
+	.about-h5-one{margin-bottom:0px;}
+	.about-content{text-indent:2em;}
+	.about-modal-mar{margin-top:160px;}
+/*end
