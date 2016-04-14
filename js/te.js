@@ -9,4 +9,12 @@ $(function(){
 	$(".poro_1").delegate(".link i","click",function(){
 		location.href=$(this).parent("a").attr("href");
 	})
+	$(window).scroll(function(){
+		var this_height=$(window).height();	
+		var offs=$("#test").offset();
+		var scrtop=$(window).scrollTop();
+		console.log(this_height+",offs:"+offs.top+",scrtop:"+scrtop)
+		// if(offs.top>=)
+	})
+	
 })
