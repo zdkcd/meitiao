@@ -3,7 +3,7 @@
 <!--container header -->
 <header class="padding-top container text-right">
 	<div class="col-md-8 h3">
-		案例：<strong><%= @page.title %></strong><br>
+		<b>案例&nbsp;——</b>《<strong><%= @page.title %></strong>》<br>
 		<a href="<%= @page.external_url%>" style="font-size:14px;text-decoration:1px"><%= @page.external_url%></a>
 	</div>
 </header>
@@ -15,7 +15,6 @@
 			<hr/>
 			<p> <strong>摘要：</strong><%= @page.description %>
 			</p>
-			<hr/>
 			<p> <strong>发布时间:</strong>
 				<%= @page.created_at.year %>
 				年
@@ -24,6 +23,8 @@
 				<%= @page.created_at.day %>
 				日
 				<br>
+			</p>
+			<p>
 				<strong>关键词:</strong>
 				<%= @page.keywords.length< 1 ? "无" : @page.keywords%>
 			</p>

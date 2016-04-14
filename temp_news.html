@@ -21,13 +21,13 @@
   				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
   					<div class="news-content">
   						<div class="date"  style="border:1px solid #ccc">
-  							<a class="colorbox" href="<%= page.image_path%>">
-  								<img class="img-responsive" src="<%= page.image_path%>" alt=""/>
+  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
+  								<img class="img-responsive" src="<%= page.image_path%>" alt=""/ height="100px">
   							</a>
   						</div>
   						<h2 class="news-title"><%= page.title %></h2>
   						<div class="news-media"></div>
-  						<p><%= page.description.truncate(80) %>&hellip;</p>
+  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
   						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
   						&nbsp;
   						<span style="font-size:12px"><%= page.updated_at%></span>
