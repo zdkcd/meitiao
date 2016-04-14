@@ -9,4 +9,16 @@ $(function(){
 	$(".poro_1").delegate(".link i","click",function(){
 		location.href=$(this).parent("a").attr("href");
 	})
+/*专注打造餐饮行业营销型网站 滑动效果*/ 
+	// $(window).scroll(function(){
+
+	// });
+	// $(window).scroll(function(){
+	// 	var he = $("#top").scrollTop();
+		
+	// 	// if (he){}
+		
+	// });
+
+	
 })
