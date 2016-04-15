@@ -309,6 +309,56 @@
 			</div>
 		</section>
 		
+		<!-- ==============================================
+		NEWS
+		=============================================== -->		
+
+		<section id="<%= nav_id[3]%>" class="white-bg padding-top-bottom">
+			<div class="container">
+				<h1 class="section-title">
+					<%= Admin::Channel.where(short_title:'news')[0].title%></h1>
+				<p class="section-description">我们的足迹</p>
+				<div class="timeline">
+					<div class="date-title">
+						<span>最新资讯</span>
+					</div>					
+					<%Admin::Page.where(channel_id:4).recent(2).each_with_index do |page,i|%>
+						<% if i%2==0%>
+							<div class='row'>
+						<% end%>
+								<div class="col-sm-6 news-item  <%= i%2==0 ?  "left" : 'right' %>
+									scrollimation fade-up">
+									<div class="news-content">
+										<div class="date">
+											<a class="colorbox" href="/templetes/<%= @templete%>/assets/bicycle_ride.jpg">
+												<img class="img-responsive" src="/templetes/<%= @templete %>/assets/blog/bicycle_ride_thumb.jpg" alt="" />	
+											</a>
+										</div>
+										<h2 class="news-title">
+											<%= page.title%>
+										</h2>
+										<div class="news-media"></div>
+										<p>
+											<%= page.description.truncate(60)%>&hellip;
+										</p>
+										<a class="read-more" href="<%= get_url(page)%>">点击详情
+										</a>
+										&nbsp;
+										<span style="font-size:12px">
+											<%= page.updated_at%>
+										</span>
+									</div>
+								</div>
+						<% if i%2==1%>
+							</div>
+						<% end%>
+					<%end%>
+				</div>
+				<p class="text-center">
+					<a class="btn btn-qubico" href="<%=Admin::Channel.find_by(short_title:'news').short_title%>" title="点击-更多资讯"><i class="fa fa-plus-circle"></i>更多资讯</a>
+				</p>
+			</div>
+		</section>
 
 <!-- ==========================================
 	服务
