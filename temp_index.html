@@ -160,13 +160,13 @@
 							</p>
 					</div>
 					<div class="col-lg-6 col-xs-12 text-center">
-						<img src="/templetes/meetiao/assets/net.png" class="img-responsive" >
+						<img src="/templetes/<%= @templete%>/assets/net.png" class="img-responsive" >
 					</div>
 				</div>
 				<!-- 更落地 -->
 				<div class="row more-land" >					
 					<div class="col-lg-6 col-xs-12">
-						<img src="/templetes/meetiao/assets/team.png" class="img-responsive">
+						<img src="/templetes/<%= @templete%>/assets/team.png" class="img-responsive">
 					</div>
 					<div class="col-lg-6 col-xs-12 text-left more-land-box font_hover">
 						<h2 class="more-all-head">更<b class="b-large b-large2"><strong style="color:#3399ff">落地</strong></b></h2>
@@ -220,7 +220,7 @@
 						</p>
 					</div>
 					<div class="col-lg-6 col-xs-12">
-						<img src="/templetes/meetiao/assets/save.jpg" class="img-responsive">
+						<img src="/templetes/<%= @templete%>/assets/save.jpg" class="img-responsive">
 					</div>
 					
 				</div>
@@ -228,7 +228,7 @@
 				<!-- 好口碑 -->
 				<div class="row more-good">					
 					<div class="col-lg-6 col-xs-12 more-good-img">
-						<img src="/templetes/meetiao/assets/mouth.png" class="img-responsive">
+						<img src="/templetes/<%= @templete%>/assets/mouth.png" class="img-responsive">
 					</div>
 					<div class="col-lg-6 col-xs-12 text-left font_hover">
 						<h2 class="more-all-head title-large">好<b class="b-large">口碑</b></h2>
@@ -356,7 +356,7 @@
 							<article class="col-md-4 col-sm-6 project-item web-design apps psd">
 								<div class="project-thumb">
 									<span class="main-link">
-										<img class="img-responsive img-center" src="<%= page.image_path %>" alt="<%= page.description %>" />
+										<img class="img-responsive img-center" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1') %>" alt="<%= page.description %>" />
 										<h2 class="project-title">
 											<%= page.title %>
 										</h2>
