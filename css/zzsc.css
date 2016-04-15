@@ -22,8 +22,10 @@
 	.b-all-money{color:#FFC125;}
 	.b-all-land{color: #636363;}
 	.more-all-spans{display:block;font-size:15px;}
-	.more-all-headp{font-weight:700;font-size:25px;}
+	.more-all-headp{font-weight:700;}
+		.more-all-headp span{ background: #3399ff;color: #fff;font-size:25px;padding: 0 10px;}
 	.more-lineheight{line-height: 25px;}
+	.font_hover:hover{background: #ccc}
 	/*互联网+*/
 	.more-net-box{padding-top: 40px;}
 	.more-money-box{padding-top: 30px}
@@ -37,7 +39,7 @@
 	/*好口碑*/
 	.more-good{margin-top:30px;padding-top:20px}
 	.more-good-img{padding-top: 30px;}
-	.good-num{font-size: 50px;line-height: 40px;vertical-align:middle;}
+	.good-num{font-size: 50px;line-height: 40px;}
 
 /*end*/
 	/* 添加滑动效果 */
@@ -54,6 +56,106 @@
 	.about-h5-one{margin-bottom:0px;}
 	.about-content{text-indent:2em;}
 	.about-modal-mar{margin-top:160px;}
+/*server_s*/
+#service_slide{
+	margin-top: 100px;
+}
+
+#service_slide .six_top{
+	margin-top: -40px;
+
+}
+#service_slide .six_bootom{
+	margin-bottom: 40px;
+}
+
+#service_slide .first{
+	position: relative;
+	
+}
+
+
+
+#service_slide .first .setup_f{
+	position: absolute;
+ 	top:59px;
+ 	left:37px;
+ 	color: #fff;
+ 	font-size: 20px;
+}
+
+#service_slide .first .setup_left_top{
+	position: absolute;
+ 	top:42px;
+ 	left:-15px;
+ 	font-size: 20px;
+ 	padding: 0 12px 0 10px;
+}
+
+#service_slide .first .setup_left{
+	position: absolute;
+ 	top:112px;
+ 	left:15px;
+ 	font-size: 20px;
+ 	padding: 0px 22px 0px 10px;
+}
+
+#service_slide .first .setup_right_top{
+	position: absolute;
+ 	top:42px;
+ 	right:-15px;
+ 	font-size: 20px;
+ 	padding: 0px 10px 0px 12px;
+}
+
+#service_slide .first .setup_right{
+	position: absolute;
+ 	top:112px;
+ 	right:15px;
+ 	font-size: 20px;
+ 	padding: 0px 10px 0px 22px;
+}
+
+/*server_end*/
+/*banner_s*/
+
+#sequence .sequence-canvas .delay1 {
+  transition-delay:1s;
+}
+
+#sequence .sequence-canvas .delay2 {
+  transition-delay:1.4s;
+}
+
+#sequence .sequence-canvas .delay3 {
+  transition-delay:1.8s;
+}
+
+#sequence .sequence-canvas .delay4 {
+  transition-delay:2.2s;
+}
+
+#sequence .sequence-canvas .delay5 {
+  transition-delay:2.6s;
+}
+
+#sequence .sequence-canvas .delay6 {
+  transition-delay:3.0s;
+}
+
+#sequence .sequence-canvas .delay7 {
+  transition-delay:3.4s;
+}
+
+#sequence .sequence-canvas .delay8{
+  transition-delay:3.8s;
+}
+
+#sequence .sequence-canvas .delay9{
+  transition-delay:4.2s;
+}
+/*banner_end*/
+
 /*end
 
 #about-shadow{padding-top: 30px}

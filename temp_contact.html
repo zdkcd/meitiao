@@ -32,8 +32,11 @@
 					<i class="fa fa-phone fa-fw" data-toggle="tooltip" data-placement="right" ></i>
 				</a>
 				<h2>联系我们</h2>
-				<p>
-					<%= Admin::Keystore.find_by(key:'contact_mobile').value%></p>
+				<p class="text-center">
+					<%= Admin::Keystore.find_by(key:'contact_mobile').value%>
+					/
+					<%= Admin::Keystore.find_by(key:'contact_phone').value%>
+				</p>
 					
 			</div>
 

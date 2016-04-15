@@ -11,17 +11,17 @@
 				</p>
 				<hr/>
 				<%=raw @channel.content %>
-					<h1 style="color:#666;">
+					<!--<h1 style="color:#666;">
 						团队介绍:
 					</h1>
 					<hr/>
-					<div class="row">
-					<% Admin::Page.where("`channel_id`='10'").all.each do |page| %>
+					 <div class="row">
+					<%# Admin::Page.where("`channel_id`='10'").all.each do |page| %>
 						<div id="about-shadow" class="col-lg-4">
-							<img src="<%= page.image_path %>" class="img-responsive about-img1" data-toggle="modal" data-target="#myModal">
-							<p class="text-center"><span class="about-span1"><%= page.title %></span><br/><%= page.keywords %></p>
+							<img src="<%#= page.image_path %>" class="img-responsive about-img1" data-toggle="modal" data-target="#myModal">
+							<p class="text-center"><span class="about-span1"><%#= page.title %></span><br/><%#= page.keywords %></p> -->
 							<!-- 弹出层 -->
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 						    	<div class="modal-dialog" role="document">
 						    		<div class="modal-content about-modal-mar">
 						    			<div class="modal-header">
@@ -30,21 +30,21 @@
 						    				</button>
 												<img src="/templetes/meetiao/assets/tou/tou1.jpg" class="img-responsive about-img2"data-toggle="modal" data-target="#myModal">
 											<h4 class="modal-title text-center" id="myModalLabel">
-												<span class="about-span2"><%= page.title %></span>
+												<span class="about-span2"><%#= page.title %></span>
 											</h4>
 												<h5 class="about-h5-one">
 												<span>个人简介:</span>
 												</h5>
 						    			</div>
 						    			<div class="modal-body">
-						    				<p class="about-content"><%= page.description %></p>
+						    				<p class="about-content"><%#= page.description %></p>
 						    			</div>
 						    		</div>
 						    	</div>
-					    	</div>
-						</div>
-					<% end %>
-					</div>
+					    	</div> -->
+						<!-- </div>
+					<%# end %>
+					</div> -->
 
 					
 					

@@ -21,7 +21,7 @@
  						&copy;
  						<a href="/home" target="_blank"><%= al[1].value%></a>
  						|
- 						<a href="http://www.miibeian.gov.cn/" target="_blank" style=" text-decoration: none;"><%= al[8].value%></a>
+ 						<a href="http://www.miibeian.gov.cn/" target="_blank" style=" text-decoration: none;"><%= al[8].value==nil || al[8].value=="nil" ? "版权所有" : al[8].value%></a>
  					</li></ul>
  				</div>
  				<div class="col-md-4 text-right">
