@@ -634,7 +634,7 @@ a:focus,
 -------------------------*/
 .services{
     margin-top:80px;
-    margin-bottom:40px;
+    /*margin-bottom:40px;*/
 }
 
 .services .icon {

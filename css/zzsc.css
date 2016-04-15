@@ -58,12 +58,16 @@
 	.about-modal-mar{margin-top:160px;}
 /*server_s*/
 #featured-area {
-	height: 337px;
-	width: 950px;
+	width:80%;
+	height:250px;
 	padding-top:50px;
-	margin:0px auto;
+	margin:0 auto;
 }
-#featured-area img{ border:none}
+#featured-area img{
+ border:none;
+	width:100%;
+	height:100%;
+}
 /*server_end*/
 /*banner_s*/
 
