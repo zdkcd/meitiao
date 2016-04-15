@@ -1,0 +1,42 @@
+<!-- 侧边栏 -->
+<style type="text/css">
+	.suspend{width:160px;height:200px;position:fixed;top:60%;right:-120px;z-index:9999;}
+	.suspend ul{margin: 0px 0px 0px 0px;text-align: center;height:50%;width:100%;background: #fff;type:none;padding:10px 0 0 0;}
+	.suspend .text1{line-height: 50px}
+	.suspend .text1:hover{color: #3c84c6;}
+	.suspend .m1{border-bottom:1px solid #ccc;width:100%;height:50%;}
+	.suspend .m1:hover{cursor:pointer;}
+</style>
+<div class="suspend">
+	<div class="col-md-1 col-lg-1 col-sm-1 col-xs-1" style="padding-left:0px; width:40px;height:200px;"><img src="/templetes/meetiao/images/customer_service.png"></div>
+	<div class="col-md-3 col-ls-1 col-sm-1 col-xs-1" style="padding-left:0px;padding-right:0px;width:120px;height:200px;background: #fff;">
+		<ul class="m1">
+			<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=<%= Admin::Keystore.find_by(id:3).value %>&amp;site=qq&amp;menu=yes" target="_blank" style="color:#888888;text-decoration: none;  
+"><li><img src="/templetes/meetiao/images/icon_qq_gray.png"></li>
+			<li class="text1">点击在线咨询</li></a>
+		</ul>
+		<ul >
+			<li><img src="/templetes/meetiao/images/phone.png"></li>
+			<li><%= Admin::Keystore.find_by(id:11).value%></li>
+			<li >（24小时）</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript"> 
+$(function(){
+	$(".suspend").mouseover(function() {
+        $(this).stop();
+        $(this).animate({right: "0"}, 400);
+    })
+    $(".suspend ul").eq(0).mouseover(function() {
+        $(this).find("img").attr("src","/templetes/meetiao/images/icon_qq.png")
+    })
+     $(".suspend ul").eq(0).mouseout(function() {
+     	 $(this).find("img").attr("src","/templetes/meetiao/images/icon_qq_gray.png")
+	});
+    $(".suspend").mouseout(function() {
+        $(this).stop();
+        $(this).animate({right: "-120px"}, 400);
+    });
+});
+</script>

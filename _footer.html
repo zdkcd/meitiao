@@ -1,44 +1,28 @@
 
  		<!-- ==============================================
 		FOOTER
-		=============================================== --> 		
+		=============================================== --> 	
+		<% al=Admin::Keystore.all %>	
  		<footer id="main-footer" class="color-bg light-typo">
  			<div class=" row ">
- 				<div class="col-md-4 text-center">
- 					<img src="/templetes/meetiao/assets/er.jpg" style="display:inline; height:100px;width:100px" class="img-responsive">
+ 				<div class="col-md-4 text-center ">
+ 					<img src="/templetes/meetiao/assets/two-dimensional code.png" style="max-height:100px;max-width:100px;border:2px solid #ccc;border-radius: 2px; margin:0 auto;"class="img-responsive ">
+ 					<i>微信公众号</i>
+ 					<i>|</i>
+ 					<i>关注美调科技</i>
  				</div>
  				<div class="col-md-4 text-center">
- 					<ul class="social-links">
- 						<li>
- 							<a href="#link"> <i class="fa fa-twitter fa-fw"></i>
- 							</a>
- 						</li>
- 						<li>
- 							<a href="#link"> <i class="fa fa-facebook fa-fw"></i>
- 							</a>
- 						</li>
- 						<li>
- 							<a href="#link">
- 								<i class="fa fa-google-plus fa-fw"></i>
- 							</a>
- 						</li>
- 						<li>
- 							<a href="#link">
- 								<i class="fa fa-dribbble fa-fw"></i>
- 							</a>
- 						</li>
- 						<li>
- 							<a href="#link">
- 								<i class="fa fa-linkedin fa-fw"></i>
- 							</a>
- 						</li>
- 					</ul>
- 					<p>
- 						&copy;2014
- 						<a href="/home" target="_blank"><%= a=Admin::Keystore.find_by(id:7).value%></a>
+ 					<ul class="" style="line-height:30px">
+ 						<li>公司：<%= al[6].value%></li>
+ 						<li>地址：<%= al[7].value%></li>
+ 						
+ 					
+ 					<li>
+ 						&copy;
+ 						<a href="/home" target="_blank"><%= al[1].value%></a>
  						|
- 						<a href="http://www.miibeian.gov.cn/" target="_blank"><%= a=Admin::Keystore.find_by(id:9).value%></a>
- 					</p>
+ 						<a href="http://www.miibeian.gov.cn/" target="_blank" style=" text-decoration: none;"><%= al[8].value==nil || al[8].value=="nil" ? "版权所有" : al[8].value%></a>
+ 					</li></ul>
  				</div>
  				<div class="col-md-4 text-right">
  						<p class="text-center">
