@@ -364,10 +364,7 @@
 							</article>
 						<% end %>
 					</div>
-						
 				</div>
-				
-
 				<p class="text-center">		
 					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.find_by(id:3))%>">
 						<i class="fa fa-plus-circle"></i>
@@ -383,6 +380,47 @@
 
 		<!-- ==============================================
 		NEWS
-		=============================================== -->		
+		=============================================== -->	
+		<section  class="white-bg padding-top-bottom">
+
+	<div class="container">
+
+		<h1 class="section-title">
+			<%= @channel.title %></h1>
+		<p class="section-description">news</p>
+
+		<div class="timeline">
+			<% @channel.pages.recent(4).each_with_index do |page,i| %>
+  			<!-- 显示的新闻数目 -->
+				<% if i % 2 == 0 %>
+				  <div class='row'>
+				<% end %>
+  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
+  					<div class="news-content">
+  						<div class="date"  style="border:1px solid #ccc">
+  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
+  								<img class="img-responsive" src="<%= page.image_path%>" alt=""/ height="100px">
+  							</a>
+  						</div>
+  						<h2 class="news-title"><%= page.title %></h2>
+  						<div class="news-media"></div>
+  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
+  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
+  						&nbsp;
+  						<span style="font-size:12px"><%= page.updated_at%></span>
+  					</div>
+  				</div>
+  			<% if i % 2 == 1 %>
+				</div>
+				<% end %>
+			<% end %>
+		</div>
+		<p class="text-center">
+			<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
+		</p>
+		<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
+	</div>
+
+</section>	
    	
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
