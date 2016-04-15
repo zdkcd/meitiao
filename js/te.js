@@ -9,10 +9,4 @@ $(function(){
 	$(".poro_1").delegate(".link i","click",function(){
 		location.href=$(this).parent("a").attr("href");
 	})
-	$('#featured-area ul').roundabout({
-					easing: 'easeOutInCirc',
-					duration: 600
-					});
-
-	
 })
