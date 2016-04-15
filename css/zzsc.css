@@ -57,65 +57,13 @@
 	.about-content{text-indent:2em;}
 	.about-modal-mar{margin-top:160px;}
 /*server_s*/
-#service_slide{
-	margin-top: 100px;
+#featured-area {
+	height: 337px;
+	width: 950px;
+	padding-top:50px;
+	margin:0px auto;
 }
-
-#service_slide .six_top{
-	margin-top: -40px;
-
-}
-#service_slide .six_bootom{
-	margin-bottom: 40px;
-}
-
-#service_slide .first{
-	position: relative;
-	
-}
-
-
-
-#service_slide .first .setup_f{
-	position: absolute;
- 	top:59px;
- 	left:37px;
- 	color: #fff;
- 	font-size: 20px;
-}
-
-#service_slide .first .setup_left_top{
-	position: absolute;
- 	top:42px;
- 	left:-15px;
- 	font-size: 20px;
- 	padding: 0 12px 0 10px;
-}
-
-#service_slide .first .setup_left{
-	position: absolute;
- 	top:112px;
- 	left:15px;
- 	font-size: 20px;
- 	padding: 0px 22px 0px 10px;
-}
-
-#service_slide .first .setup_right_top{
-	position: absolute;
- 	top:42px;
- 	right:-15px;
- 	font-size: 20px;
- 	padding: 0px 10px 0px 12px;
-}
-
-#service_slide .first .setup_right{
-	position: absolute;
- 	top:112px;
- 	right:15px;
- 	font-size: 20px;
- 	padding: 0px 10px 0px 22px;
-}
-
+#featured-area img{ border:none}
 /*server_end*/
 /*banner_s*/
 
