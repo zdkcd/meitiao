@@ -19,7 +19,7 @@
 						<!--==== Project Thumbnail & Title ====-->
 						<div class="project-thumb">
 							<a href="<%= get_url(p) %>" >
-								<img class="img-responsive img-center" src="<%= p.image_path %>" alt=""/>
+								<img class="img-responsive img-center" src="<%= p.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/>
 								<h2 class="project-title">
 									<%= p.title %>
 								</h2>

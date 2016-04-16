@@ -22,7 +22,7 @@
   					<div class="news-content">
   						<div class="date"  style="border:1px solid #ccc">
   							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
-  								<img class="img-responsive" src="<%= page.image_path%>" alt=""/ height="100px">
+  								<img class="img-responsive" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/ height="100px">
   							</a>
   						</div>
   						<h2 class="news-title"><%= page.title %></h2>
