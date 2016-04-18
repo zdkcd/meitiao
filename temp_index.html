@@ -5,7 +5,7 @@
 		<!-- ==============================================
 		HEADER -V-0415
 		=============================================== -->		
-<header id="<%= nav_id[0]%>" class="jumbotron">
+		<header id="<%= nav_id[0]%>" class="jumbotron">
 
 			<div id="sequence-theme">
 
@@ -309,71 +309,21 @@
 			</div>
 		</section>
 		
-		<!-- ==============================================
-		NEWS
-		=============================================== -->		
-
-		<section id="<%= nav_id[3]%>" class="white-bg padding-top-bottom">
-			<div class="container">
-				<h1 class="section-title">
-					<%= Admin::Channel.where(short_title:'news')[0].title%></h1>
-				<p class="section-description">我们的足迹</p>
-				<div class="timeline">
-					<div class="date-title">
-						<span>最新资讯</span>
-					</div>					
-					<%Admin::Page.where(channel_id:4).recent(2).each_with_index do |page,i|%>
-						<% if i%2==0%>
-							<div class='row'>
-						<% end%>
-								<div class="col-sm-6 news-item  <%= i%2==0 ?  "left" : 'right' %>
-									scrollimation fade-up">
-									<div class="news-content">
-										<div class="date">
-											<a class="colorbox" href="/templetes/<%= @templete%>/assets/blog/bicycle_ride.jpg">
-												<img class="img-responsive" src="/templetes/<%= @templete %>/assets/blog/bicycle_ride_thumb.jpg" alt="" />	
-											</a>
-										</div>
-										<h2 class="news-title">
-											<%= page.title%>
-										</h2>
-										<div class="news-media"></div>
-										<p>
-											<%= page.description.truncate(60)%>&hellip;
-										</p>
-										<a class="read-more" href="<%= get_url(page)%>">点击详情
-										</a>
-										&nbsp;
-										<span style="font-size:12px">
-											<%= page.updated_at%>
-										</span>
-									</div>
-								</div>
-						<% if i%2==1%>
-							</div>
-						<% end%>
-					<%end%>
-				</div>
-				<p class="text-center">
-					<a class="btn btn-qubico" href="<%=Admin::Channel.find_by(short_title:'news').short_title%>" title="点击-更多资讯"><i class="fa fa-plus-circle"></i>更多资讯</a>
-				</p>
-			</div>
-		</section>
 
 <!-- ==========================================
 	服务
 =================================== -->
-<script type="text/javascript" src="/templetes/<%= @templete%>/js/libs/jquery-min.js"></script> 
-<script type="text/javascript" src="/templetes/<%= @templete%>/js/jquery.roundabout-1.0.min.js"></script> 
-<script type="text/javascript" src="/templetes/<%= @templete%>/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript">		
-	$(document).ready(function() { 
-		$('#featured-area ul').roundabout({
-			easing: 'easeOutInCirc',
-			duration: 600
-		});
-	});
-</script> 	 
+		<script type="text/javascript" src="/templetes/<%= @templete%>/js/libs/jquery-min.js"></script> 
+		<script type="text/javascript" src="/templetes/<%= @templete%>/js/jquery.roundabout-1.0.min.js"></script> 
+		<script type="text/javascript" src="/templetes/<%= @templete%>/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">		
+			$(document).ready(function() { 
+				$('#featured-area ul').roundabout({
+					easing: 'easeOutInCirc',
+					duration: 600
+				});
+			});
+		</script> 	 
 		<section id="<%= nav_id[1]%>" class="white-bg">
 			<h2 class="text-center section-title" style="color:#333;margin-bottom:90px">
 				<strong>建站﹢推广﹢孵化代运营服务</strong>
@@ -441,44 +391,44 @@
 		=============================================== -->	
 		<section  class="white-bg padding-top-bottom">
 
-	<div class="container">
-		<h1 class="section-title">
-			行业新闻·动态
-		</h1>
-		<p class="section-description">news</p>
+			<div class="container">
+				<h1 class="section-title">
+					行业新闻·动态
+				</h1>
+				<p class="section-description">news</p>
 
-		<div class="timeline">
-			<% Admin::Page.recent(4).each_with_index do |page,i| %>
-  			<!-- 显示的新闻数目 -->
-				<% if i % 2 == 0 %>
-				  <div class='row'>
-				<% end %>
-  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
-  					<div class="news-content">
-  						<div class="date"  style="border:1px solid #ccc">
-  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
-  								<img class="img-responsive" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/ height="100px">
-  							</a>
-  						</div>
-  						<h2 class="news-title"><%= page.title %></h2>
-  						<div class="news-media"></div>
-  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
-  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
-  						&nbsp;
-  						<span style="font-size:12px"><%= page.updated_at%></span>
-  					</div>
-  				</div>
-  			<% if i % 2 == 1 %>
+				<div class="timeline">
+					<% Admin::Page.recent(4).each_with_index do |page,i| %>
+		  			<!-- 显示的新闻数目 -->
+						<% if i % 2 == 0 %>
+						  <div class='row'>
+						<% end %>
+		  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
+		  					<div class="news-content">
+		  						<div class="date"  style="border:1px solid #ccc">
+		  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
+		  								<img class="img-responsive" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/ height="100px">
+		  							</a>
+		  						</div>
+		  						<h2 class="news-title"><%= page.title %></h2>
+		  						<div class="news-media"></div>
+		  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
+		  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
+		  						&nbsp;
+		  						<span style="font-size:12px"><%= page.updated_at%></span>
+		  					</div>
+		  				</div>
+		  			<% if i % 2 == 1 %>
+						</div>
+						<% end %>
+					<% end %>
 				</div>
-				<% end %>
-			<% end %>
-		</div>
-		<p class="text-center">
-			<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
-		</p>
-		<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
-	</div>
+				<p class="text-center">
+					<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
+				</p>
+				<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
+			</div>
 
-</section>	
+		</section>	
    	
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
