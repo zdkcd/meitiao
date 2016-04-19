@@ -1,5 +1,9 @@
+<div style="overflow:auto;overflow-x: hidden;">
+
 <%= render file:  'public/templetes/'+@templete+'/_header.html' %>
 <%= render file:  'public/templetes/'+@templete+'/_right.html' %>
+
+
 <% nav_id=Admin::Channel.where(id:[1,2,3,4]).map(&:short_title) %>
 
 		<!-- ==============================================
@@ -25,16 +29,16 @@
 					</div>
 					<div class="perspective-view view1">
 						<div class="single-image in-from-top-z fast">
-							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt=""style="transform:scale(1.3)" />		
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt=""style="transform:scale(1.3);-webkit-transform:scale(1.1);" />		
 						</div>
 						<div class="single-image in-from-top-z fast delay1">
-							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" style="transform:scale(1.5)"/>		
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" style="transform:scale(1.5);-webkit-transform:scale(1.3);"/>		
 						</div>
 						<div class="single-image in-from-top-z fast delay2">
-							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" style="transform:scale(1.7)"/>		
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" style="transform:scale(1.7);-webkit-transform:scale(1.5);"/>		
 						</div>
 						<div class="single-image in-from-top-z fast delay3">
-							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" style="transform:scale(1.9)"/>		
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" style="transform:scale(1.9);-webkit-transform:scale(1.8);"/>		
 						</div>
 						
 					</div>
@@ -84,8 +88,6 @@
 	</div>
 </header>
 		<!--End header -->		
-<div style="overflow:auto;overflow-x: hidden;">
-
 	<!-- ==============================================
 	打造更省钱 更赚钱的餐饮行业营销型网站
 	=============================================== -->	
@@ -267,7 +269,9 @@ NEWS
 		<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
 	</div>
 </section>	
-</div> 	
+
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
+
+</div>
 
 
