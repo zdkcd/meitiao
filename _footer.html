@@ -4,6 +4,7 @@
 		=============================================== --> 	
 		<% al=Admin::Keystore.all %>	
  		<footer id="main-footer" class="color-bg light-typo">
+ 			
  			<div class=" row ">
  				<div class="col-md-4 text-center ">
  					<img src="/templetes/meetiao/assets/two-dimensional code.png" style="max-height:100px;max-width:100px;border:2px solid #ccc;border-radius: 2px; margin:0 auto;"class="img-responsive ">
@@ -15,14 +16,14 @@
  					<ul class="" style="line-height:30px">
  						<li>公司：<%= al[6].value%></li>
  						<li>地址：<%= al[7].value%></li>
- 						
- 					
- 					<li>
- 						&copy;
- 						<a href="/home" target="_blank"><%= al[1].value%></a>
- 						|
- 						<a href="http://www.miibeian.gov.cn/" target="_blank" style=" text-decoration: none;"><%= al[8].value==nil || al[8].value=="nil" ? "版权所有" : al[8].value%></a>
- 					</li></ul>
+ 			
+	 					<li>
+	 						&copy;
+	 						<a href="/home" target="_blank"><%= al[1].value%></a>
+	 						|
+	 						<a href="http://www.miibeian.gov.cn/" target="_blank" style=" text-decoration: none;"><%= al[8].value==nil || al[8].value=="nil" ? "版权所有" : al[8].value%></a>
+	 					</li>
+ 					</ul>
  				</div>
  				<div class="col-md-4 text-right">
  						<p class="text-center">
@@ -31,6 +32,44 @@
  								联系我们
  							</a>
  						</p>
+ 						
+
  				</div>
  			</div>
+ 			<div class="row">
+							
+							<div class="col-sm-3 col-xs-3 text-center contact-item">
+				  
+				  				<a class="icon" href="tel:<%= Admin::Keystore.find_by(key:'contact_mobile').value%>" >
+				  					<i class="fa fa-phone fa-fw add-icon-color" data-toggle="tooltip" data-placement="right" ></i>
+				  				</a>
+				  				<h2>电话</h2>
+				  				
+				  					
+				  			</div>
+				  
+				  			<div class="col-sm-3 col-xs-3 text-center contact-item">
+				  
+				  				<a class="icon" href="sms:<%= Admin::Keystore.find_by(key:'contact_mobile').value%>" >
+				  					<i class="fa fa-comments-o fa-fw add-icon-color" data-toggle="tooltip" data-placement="right" ></i>
+				  				</a>
+				  				<h2>短信</h2>
+				  				
+				  					
+				  			</div>	
+
+				  			<div class="col-sm-3 col-xs-3 text-center contact-item">
+				  
+				  				<a class="icon" href="mailto:<%= a=Admin::Keystore.where(key:'contact_email')[0].value%>">
+				  					 <i class="fa fa-envelope fa-fw add-icon-color"></i>
+				  				</a>
+				  				<h2>邮箱</h2>
+				  			</div>
+
+				  			<div class="col-sm-3 col-xs-3 text-center contact-item">
+				  				<a class="icon" href="http://ditu.amap.com/search?query=%E9%BE%99%E6%B9%96%E5%8C%97%E5%9F%8E%E5%A4%A9%E8%A1%9731%E6%A0%8B13%E6%A5%BC1303%E5%8F%B7&city=510100" target="_blank"> <i class="fa fa-map-marker fa-fw add-icon-color"></i>
+				  				</a>
+				  				<h2>地址</h2>
+				  			</div>
+			</div>
  		</footer>

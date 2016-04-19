@@ -61,9 +61,9 @@ ol, ul {
 }
 
 #sequence h2 {
-  font-family: "Dosis", sans-serif;
+  font-family:"Microsoft Yahei","Hiragino Sans GB",sans-serif;
   font-size: 58px;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0 0 10px 0;
 }
 
@@ -72,7 +72,7 @@ ol, ul {
 }
 
 #sequence h3 {
-  font-family: "Magra", sans-serif;
+  font-family:"Microsoft Yahei","Hiragino Sans GB",sans-serif;
   font-size: 20px;
 }
 #sequence .controls {

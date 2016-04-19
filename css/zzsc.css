@@ -1,4 +1,6 @@
 
+
+
 /*解决方案*/
 
 	.do-all{padding-top:50px;max-height:400px;height: 400px; box-shadow: 1px 1px 20px;}
@@ -11,11 +13,11 @@
 	.do-all:hover .all1-head{color:#fff;}
 	.icon-box{padding-bottom:30px;}
 	.do-p-a2{text-indent:2em;font-size: 14px;line-height: 25px;}
-	.more-box-span1{display:block;}
+	.more-box-span1{display:block;color:#777; letter-spacing: 5px;}
 	.more-box-p2{color:#ec2c2c;}
 
 	/*公用样式*/
-	.title-large{font-family: '黑体';font-weight: 700;}
+	.title-large{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: 300;}
 	.b-large{font-size:45px;}
 	.b-large1{color: #FFC125;}
 	.b-large2{color: #636363;}
@@ -32,12 +34,12 @@
 	.more-land-box{padding-top: 45px;}
 	.more-good-box{padding-top: }
 	/*更赚钱*/
-	.more-money{margin-top:30px;padding-top:20px; background:;}
+	
 	.more-money-box{padding-top: 50px;}
 	/*更落地*/
 	.more-land{margin-top:30px;}
 	/*好口碑*/
-	.more-good{margin-top:30px;padding-top:20px}
+	
 	.more-good-img{padding-top: 30px;}
 	.good-num{font-size: 50px;line-height: 40px;}
 
@@ -107,6 +109,16 @@
   transition-delay:4.2s;
 }
 /*banner_end*/
+
+/* index footer add start*/
+	.add-icon-color{color:#fff;}
+	.add-about-size{font-size: 15px;color: #666;letter-spacing: 1px ;}
+	.add-about-li{letter-spacing: 1px ;line-height: 25px; font-size: 15px;list-style: inside;}
+	.add-about-left{border-left: 5px solid #dfdfdf;padding-left: 20px;}
+	.add-about-heng::before{content: '\2014 \00A0';}
+/* index footer add end*/
+
+
 
 /*end
 
