@@ -5,310 +5,209 @@
 		<!-- ==============================================
 		HEADER -V-0415
 		=============================================== -->		
-		<header id="<%= nav_id[0]%>" class="jumbotron">
+<header id="<%= nav_id[0]%>" class="jumbotron">
 
-			<div id="sequence-theme">
+	<div id="sequence-theme">
 
-				<div id="sequence" class="perspective multilayer">
+		<div id="sequence" class="perspective multilayer">
 
-					<ul class="controls">
-						<li class="sequence-prev"> <i class="fa fa-angle-left fa-fw"></i>
-						</li>
-						<li class="sequence-next"> <i class="fa fa-angle-right fa-fw"></i>
-						</li>
-					</ul>
+			<ul class="controls">
+				<li class="sequence-prev"> <i class="fa fa-angle-left fa-fw"></i>
+				</li>
+				<li class="sequence-next"> <i class="fa fa-angle-right fa-fw"></i>
+				</li>
+			</ul>
+			<ul class="sequence-canvas container">
+				<li>
+					<div class="message slow">
+						<h2 class="title in-from-top slow">专注<b>餐饮</b>20年</h2>
+						<h3 class="in-from-bottom slow delay1">美调科技是国内首家专注于餐饮供应链企业互联网营销系统建设的互联网公司。</h3>							
+					</div>
+					<div class="perspective-view">
+						<div class="single-image in-from-top-z fast">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt="" />		
+						</div>
+						<div class="single-image in-from-top-z fast delay1">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" />		
+						</div>
+						<div class="single-image in-from-top-z fast delay2">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" />		
+						</div>
+						<div class="single-image in-from-top-z fast delay3">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" />		
+						</div>
+						<div class="single-image in-from-top-z fast delay4">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer5.png" alt="" />		
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="message slow">
+						<h2 class="title in-from-top slow">领军<b>互联网+</b></h2>
+						<h3 class="in-from-bottom slow delay1">美调让您的企业迅速玩转互联网，为您提供建站﹢推广﹢孵化代运营一站式服务。</h3>
+					</div>
+					<div class="perspective-view">
+						<div class="image-top in-from-top-z fast">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer1.png" alt="" />		
+						</div>
+						<div class="image-top in-from-top-z fast delay1">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer2.png" alt="" />		
+						</div>
+						<div class="image-top in-from-top-z fast delay2">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer3.png" alt="" />		
+						</div>
+						<div class="image-top in-from-top-z fast delay3">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer4.png" alt="" />		
+						</div>
+						<div class="image-top in-from-top-z slow delay4">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer5.png" alt="" />		
+						</div>
+						<div class="image-bottom in-from-top-z fast delay6">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer6.png" alt="" />		
+						</div>
+						<div class="image-bottom in-from-top-z fast delay7">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer7.png" alt="" />		
+						</div>
+						<div class="image-bottom in-from-top-z fast delay8">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer8.png" alt="" />		
+						</div>
+						<div class="image-bottom in-from-top-z fast delay9">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer9.png" alt="" />		
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="message slow">
+						<h2 class="title in-from-left slow">餐饮营销<b>转型</b></h2>
+						<h3 class="in-from-left slow delay1">美调致力于打造最专业的餐饮互联网营销解决方案，准确定位，快速推广，提高流量。
+						</h3>
+					</div>
+					<div class="perspective-view">
+						<div class="image-left in-from-top-z fast delay1">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-left-1.png" alt="" />		
+						</div>
+						<div class="image-left in-from-top-z fast delay3">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-left-2.png" alt="" />		
+						</div>
 
-					<ul class="sequence-canvas container">
-						<li>
-							<div class="message slow">
-								<h2 class="title in-from-top slow">专注<b>餐饮</b>20年</h2>
-								<h3 class="in-from-bottom slow delay1">美调科技是国内首家专注于餐饮供应链企业互联网营销系统建设的互联网公司，公司聚集了国内调味品行业营销专家，美国硅谷创新技术团队，知名网络公司精英等优秀人才。让您的网络营销方案不同凡响！！！</h3>							
-							</div>
-							<div class="perspective-view">
-								<div class="single-image in-from-top-z fast">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer1.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay1">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer2.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay2">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer3.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay3">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer4.png" alt="" />		
-								</div>
-								<div class="single-image in-from-top-z fast delay4">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide1-layer5.png" alt="" />		
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="message slow">
-								<h2 class="title in-from-top slow">领军<b>互联网+</b></h2>
-								<h3 class="in-from-bottom slow delay1">美调让您的企业迅速玩转互联网！！！.互联网世界是平的，没有区域市场之分。传统时代，还可以做区域品牌老大，互联网上没有这个机会。</h3>
-							</div>
-							<div class="perspective-view">
-								<div class="image-top in-from-top-z fast">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer1.png" alt="" />		
-								</div>
-								<div class="image-top in-from-top-z fast delay1">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer2.png" alt="" />		
-								</div>
-								<div class="image-top in-from-top-z fast delay2">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer3.png" alt="" />		
-								</div>
-								<div class="image-top in-from-top-z fast delay3">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer4.png" alt="" />		
-								</div>
-								<div class="image-top in-from-top-z slow delay4">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer5.png" alt="" />		
-								</div>
-								<div class="image-bottom in-from-top-z fast delay6">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer6.png" alt="" />		
-								</div>
-								<div class="image-bottom in-from-top-z fast delay7">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer7.png" alt="" />		
-								</div>
-								<div class="image-bottom in-from-top-z fast delay8">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer8.png" alt="" />		
-								</div>
-								<div class="image-bottom in-from-top-z fast delay9">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide2-layer9.png" alt="" />		
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="message slow">
-								<h2 class="title in-from-left slow">网络营销<b>转型</b></h2>
-								<h3 class="in-from-left slow delay1">
-								 	互联网营销的时代已经到来，不做网络营销的公司未来将会被淘汰。
-								</h3>
-							</div>
-							<div class="perspective-view">
-								<div class="image-left in-from-top-z fast delay1">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-left-1.png" alt="" />		
-								</div>
-								<div class="image-left in-from-top-z fast delay3">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-left-2.png" alt="" />		
-								</div>
-
-								<div class="image-right in-from-top-z fast delay1">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer1.png" alt="" />		
-								</div>
-								<div class="image-right in-from-top-z fast delay2">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer2.png" alt="" />		
-								</div>
-								<div class="image-right in-from-top-z fast delay3">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer3.png" alt="" />		
-								</div>
-								<div class="image-right in-from-top-z fast delay4">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer4.png" alt="" />		
-								</div>
-								<div class="image-right in-from-top-z fast delay5">
-									<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer5.png" alt="" />		
-								</div> 
-							</div>
-						</li>
-					</ul>
-
-				</div>
-
-			</div>
-		</header>
+						<div class="image-right in-from-top-z fast delay1">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer1.png" alt="" />		
+						</div>
+						<div class="image-right in-from-top-z fast delay2">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer2.png" alt="" />		
+						</div>
+						<div class="image-right in-from-top-z fast delay3">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer3.png" alt="" />		
+						</div>
+						<div class="image-right in-from-top-z fast delay4">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer4.png" alt="" />		
+						</div>
+						<div class="image-right in-from-top-z fast delay5">
+							<img class="img-responsive" src="/templetes/<%= @templete%>/assets/slider/perspective/slide3-layer5.png" alt="" />		
+						</div> 
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
 		<!--End header -->		
+<div style="overflow:auto;overflow-x: hidden;">
 
-		<!-- ==============================================
-		SERVICES
-		=============================================== -->
-	
+	<!-- ==============================================
+	打造更省钱 更赚钱的餐饮行业营销型网站
+	=============================================== -->	
 
-		<!-- ==============================================
-		打造更省钱 更赚钱的餐饮行业营销型网站
-		=============================================== -->	
-
-		<section class="white-bg padding-top-bottom">
-
-			<div class="container">
-				<h2 class="text-center section-title more-box" >
-					<strong>专注打造<b>餐饮行业营销型网站</b></strong>
-				</h2>
-				<p class="section-description">
-					<span class="more-box-span1">美调科技 餐饮营销型网站始创者、标准制定者</span>
-				</p>
-				<!-- 互联网+ -->
-				<div class="row box-lg " >
-					<div class="col-lg-6 col-xs-12 text-right more-net-box font_hover" >
-						<h2><b class="b-large"><strong>互联网+</strong></b>餐饮</h2>
-						<p class="more-all-headp"><span>让互联网与餐饮行业进行深度融合</span></p>
-						<p class="more-lineheight">
-							<span class="more-all-spans">
-								拥有互联网思维加以创新驱动 
-								<b><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								实现互联网﹢，通过网络赚钱
-								<b><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								颠覆餐饮供应链企业传统的营销思维和模式
-								<b><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								互联网+社会治理、虚拟社会治理会是很大的不同
-								<b><i class="fa fa-star"></i></b>
-							</span>
-							</p>
-					</div>
-					<div class="col-lg-6 col-xs-12 text-center">
-						<img src="/templetes/<%= @templete%>/assets/net.png" class="img-responsive" >
-					</div>
-				</div>
-				<!-- 更落地 -->
-				<div class="row more-land" >					
-					<div class="col-lg-6 col-xs-12">
-						<img src="/templetes/<%= @templete%>/assets/team.png" class="img-responsive">
-					</div>
-					<div class="col-lg-6 col-xs-12 text-left more-land-box font_hover">
-						<h2 class="more-all-head">更<b class="b-large b-large2"><strong style="color:#3399ff">落地</strong></b></h2>
-						<p class="more-all-headp"><span>强大的团队&nbsp;&nbsp;资深的技术积淀 </span></p>
-						<p class="more-lineheight">
-							<span class="more-all-spans">
-								<b class="b-all-land"><i class="fa fa-star"></i></b></i>
-								美国硅谷创新技术团队支持
-								
-							</span>
-							<span class="more-all-spans">
-								<b class="b-all-land"><i class="fa fa-star"></i></b></i>
-								知名网络公司精英等优秀人才加盟
-								
-							</span>		
-							<span class="more-all-spans">
-								<b class="b-all-land"><i class="fa fa-star"></i></b></i>
-								聚集了国内外调味品行业营销专家
-								
-							</span>
-							<span class="more-all-spans">
-								<b class="b-all-land"><i class="fa fa-star"></i></b></i>
-								拥有先进的技术平台，服务更加专业和系统化
-								
-							</span>		
-						</p>
-					</div>
-				</div>
-				<!-- 跟赚钱 -->
-				<div class="row more-money" class="more-money">
-					<div class="col-lg-6 col-xs-12 more-money-box text-right font_hover" >	
-						<h2>更<b class="b-large b-large1"><strong>赚钱</strong></b></h2>
-						<p class="more-all-headp"><span>准确定位&nbsp;&nbsp;快速推广 &nbsp;&nbsp;提高流量</span></p>
-						<p class="more-lineheight">
-							<span class="more-all-spans">
-								让老客户带动新客户
-								<b class="b-all-money"><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								快速锁定、打动你的目标客户
-								<b class="b-all-money"><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								颠覆餐饮传统的营销思维和模式
-								<b class="b-all-money"><i class="fa fa-star"></i></b>
-							</span>
-							<span class="more-all-spans">
-								一站式 顾问式 陪同式互联网营销解决方案
-								<b class="b-all-money"><i class="fa fa-star"></i></b>
-							</span>
-						</p>
-					</div>
-					<div class="col-lg-6 col-xs-12">
-						<img src="/templetes/<%= @templete%>/assets/save.jpg" class="img-responsive">
-					</div>
-					
-				</div>
+	<section class="white-bg padding-top-bottom">
+			<h2 class="text-center section-title more-box" >
+				专注打造<b>餐饮营销网站</b>
+			</h2>
+			<p class="section-description">
+				<span class="more-box-span1">餐饮营销网站始创者、标准制定者</span>
+			</p>
+		<div class="container">
+			
+			<!-- 互联网+ -->
+			
 				
-				<!-- 好口碑 -->
-				<div class="row more-good">					
-					<div class="col-lg-6 col-xs-12 more-good-img">
-						<img src="/templetes/<%= @templete%>/assets/mouth.png" class="img-responsive">
+					<img src="/templetes/<%= @templete%>/assets/imga/can.jpg">
+				
+			
+			
+			
+				
+					<img src="/templetes/<%= @templete%>/assets/imga/land.jpg">
+				
+			
+
+					<img src="/templetes/<%= @templete%>/assets/imga/money.jpg">
+
+
+
+				
+					<img src="/templetes/<%= @templete%>/assets/imga/good.jpg">
+				
+			
+
+			
+				
+					
+				
+			
+		</div>
+	</section>
+
+	<!-- ==============================================
+	解决方案	
+	=============================================== -->		
+	<section class="white-bg padding-top-bottom">
+		<div class="container">
+			<h2 class="text-center section-title more-box">
+				为您提供最有营销力的<b>解决方案</b>
+				<p><span>To provide you with the most marketing solutions</span></p>
+			</h2>
+			<p class="section-description">
+				<span class="more-box-span1">
+					让您的网络订单
+					<b>“<strong>飞</strong>”</b>
+					起来
+				</span>
+			</p>
+			<div class="row">
+				<div class="col-lg-3 do-all all1">
+					<div class="text-center icon-box">
+						<i class="fa fa-link icon-pages"></i>
 					</div>
-					<div class="col-lg-6 col-xs-12 text-left font_hover">
-						<h2 class="more-all-head title-large">好<b class="b-large">口碑</b></h2>
-						<p class="more-all-headp"><span>成功运营了</span><b class="good-num">90</b><span>多家已赚钱的网站</span></p>
-						<p class="more-lineheight">
-							<span class="more-all-spans">
-								<b><i class="fa fa-star"></i></b>
-								一流的服务保证
-								
-							</span>
-							<span class="more-all-spans">
-								<b><i class="fa fa-star"></i></b>
-								尽心服务每个客户
-							</span>
-							<span class="more-all-spans">
-								<b><i class="fa fa-star"></i></b>
-								应用中获得最大的收益
-							</span>
-							<span class="more-all-spans">
-								<b><i class="fa fa-star"></i></b>
-								餐饮互联网专业营销推广
-								
-							</span>			
-						</p>
+					<h3 class="text-center all1-head"><strong>一站式服务</strong></h3>
+
+					<p class="do-p-a2">从网站建设到网络营销启动直至运营，提供1对1专属服务。7X24小时服务随时响应，主动定期的电话回访，跟踪解决客户的问题，网站有问题，我们会协助您解决。</p>
+
+				</div>
+				<div class="col-lg-3 do-all">
+					<div class="text-center icon-box">
+						<i class="fa fa-phone icon-pages"></i>
 					</div>
+					<h3 class="text-center all1-head"><strong>顾问式服务</strong></h3>
+					<p class="do-p-a2">企业在赢利的基础上，建立、维持和促进与顾客和其他伙伴之间的关系，以实现参与各方的目标，从而形成一种兼顾各方利益的长期关系。正确处理企业与这些组织及个人的关系</p>
+				</div>
+				<div class="col-lg-3 do-all">
+					<div class="text-center icon-box">
+						<i class="fa fa-group icon-pages"></i>
+					</div>
+					<h3 class="text-center all1-head"><strong>陪同式服务</strong></h3>
+					<p class="do-p-a2">从网站建设到网络营销启动直至运营阶段，提供1对1专属沟通服务。7X24小时服务随时响应，主动并且定期的电话回访，持续跟踪解决客户的问题，只要网站有问题，我们会协助您解决。</p>
+				</div>
+				<div class="col-lg-3 do-all all4">
+					<div class="text-center icon-box">
+						<i class="fa fa-user icon-pages"></i>
+					</div>
+					<h3 class="text-center all1-head"><strong>VIP服务</strong></h3>
+					<p class="do-p-a2">从网站建设到网络营销启动直至运营阶段，提供1对1专属沟通服务。7X24小时服务随时响应，主动并且定期的电话回访，持续跟踪解决客户的问题，只要网站有问题，我们会协助您解决。</p>
 				</div>
 			</div>
-		</section>
-
-		<!-- ==============================================
-		解决方案	
-		=============================================== -->		
-		<section class="white-bg padding-top-bottom">
-			<div class="container">
-				<h2 class="text-center section-title more-box">
-					<strong>为您提供最有营销力的<b>解决方案</b></strong>
-					<p><span>To provide you with the most marketing solutions</span></p>
-				</h2>
-				<p class="section-description">
-					<span class="more-box-span1">
-						让您的网络订单
-						<b>“<strong>飞</strong>”</b>
-						起来
-					</span>
-				</p>
-				<div class="row">
-					<div class="col-lg-3 do-all all1">
-						<div class="text-center icon-box">
-							<i class="fa fa-link icon-pages"></i>
-						</div>
-						<h3 class="text-center all1-head"><strong>一站式服务</strong></h3>
-
-						<p class="do-p-a2">从网站建设到网络营销启动直至运营，提供1对1专属服务。7X24小时服务随时响应，主动定期的电话回访，跟踪解决客户的问题，网站有问题，我们会协助您解决。</p>
-
-					</div>
-					<div class="col-lg-3 do-all">
-						<div class="text-center icon-box">
-							<i class="fa fa-link icon-pages"></i>
-						</div>
-						<h3 class="text-center all1-head"><strong>顾问式服务</strong></h3>
-						<p class="do-p-a2">企业在赢利的基础上，建立、维持和促进与顾客和其他伙伴之间的关系，以实现参与各方的目标，从而形成一种兼顾各方利益的长期关系。正确处理企业与这些组织及个人的关系</p>
-					</div>
-					<div class="col-lg-3 do-all">
-						<div class="text-center icon-box">
-							<i class="fa fa-group icon-pages"></i>
-						</div>
-						<h3 class="text-center all1-head"><strong>陪同式服务</strong></h3>
-						<p class="do-p-a2">从网站建设到网络营销启动直至运营阶段，提供1对1专属沟通服务。7X24小时服务随时响应，主动并且定期的电话回访，持续跟踪解决客户的问题，只要网站有问题，我们会协助您解决。</p>
-					</div>
-					<div class="col-lg-3 do-all all4">
-						<div class="text-center icon-box">
-							<i class="fa fa-user icon-pages"></i>
-						</div>
-						<h3 class="text-center all1-head"><strong>VIP服务</strong></h3>
-						<p class="do-p-a2">从网站建设到网络营销启动直至运营阶段，提供1对1专属沟通服务。7X24小时服务随时响应，主动并且定期的电话回访，持续跟踪解决客户的问题，只要网站有问题，我们会协助您解决。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+		</div>
+	</section>
+</div>
 
 <!-- ==========================================
 	服务
@@ -323,112 +222,103 @@
 					duration: 600
 				});
 			});
-		</script> 	 
-		<section id="<%= nav_id[1]%>" class="white-bg">
-			<h2 class="text-center section-title" style="color:#333;margin-bottom:90px">
-				<strong>建站﹢推广﹢孵化代运营服务</strong>
-				<p><span style="font-size:17px;">Site + promotion + incubator operation services</span></p>
-			</h2>
+		</script> 
 
-			<div class="container">
-				<div class="row services" >
-					<div id="featured-area" > 
-						<ul> 
-							<li><img src="/templetes/<%= @templete%>/images/bud.png" alt="建站" class="img-responsive" /></li>
-							<li><img src="/templetes/<%= @templete%>/images/ad.png" alt="推广" class="img-responsive"/></li>  
-							<li><img src="/templetes/<%= @templete%>/images/po.png" alt="运营" class="img-responsive"/></li>  
-						</ul> 
-					</div>
-				</div>
-			</div>	
-		</section>
+<section id="<%= nav_id[1]%>" class="white-bg padding-top-bottom">
+	<h2 class="text-center section-title" style="color:#333;margin-bottom:90px">
+		建站﹢推广﹢孵化代运营服务
+		<p><span style="font-size:17px;">Site + promotion + incubator operation services</span></p>
+	</h2>
 
-		<!-- ==============================================
-		PORTFOLIO
-		=============================================== -->		
-		<section id="<%= nav_id[2]%>" class="gray-bg padding-top-bottom poro" >
-			<div class="container">
-				<h1 class="section-title">案例</h1>
-				<p class="section-description">我们的作品</p>
-				<div class="projects-container scrollimation">
-					<div class="row poro_1">
-						<% Admin::Page.where(channel_id:3).recent(6).each do |page| %>		
-							<article class="col-md-4 col-sm-6 project-item web-design apps psd">
-								<div class="project-thumb">
-									<span class="main-link">
-										<img class="img-responsive img-center" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1') %>" alt="<%= page.description %>" />
-										<h2 class="project-title">
-											<%= page.title %>
-										</h2>
-										<span class="overlay-mask"></span>
-									</span>
-									<a class="enlarge" href="<%= page.image_path %>" title="<%= page.title %>">
-										<i class="fa fa-expand fa-fw"></i>
-									</a>
-									<a class="link" href="<%= get_url(page) %>">
-										<i class="fa fa-eye fa-fw"></i>
-									</a>
-								</div>
-							</article>
-						<% end %>
-					</div>
-				</div>
-				<p class="text-center">		
-					<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.find_by(id:3))%>">
-						<i class="fa fa-plus-circle"></i>
-						更多案例
-					</a>
-				</p>
+	<div class="container">
+		<img src="/templetes/<%= @templete%>/assets/setup.png" class="img-responsive">
+	</div>
 
-			</div>
-			<!-- End container -->		
+</section>
 
-			<!--End #project-preview panel-->		
-		</section>
-
-		<!-- ==============================================
-		NEWS
-		=============================================== -->	
-		<section  class="white-bg padding-top-bottom">
-
-			<div class="container">
-				<h1 class="section-title">
-					行业新闻·动态
-				</h1>
-				<p class="section-description">news</p>
-
-				<div class="timeline">
-					<% Admin::Page.recent(4).each_with_index do |page,i| %>
-		  			<!-- 显示的新闻数目 -->
-						<% if i % 2 == 0 %>
-						  <div class='row'>
-						<% end %>
-		  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
-		  					<div class="news-content">
-		  						<div class="date"  style="border:1px solid #ccc">
-		  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
-		  								<img class="img-responsive" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/ height="100px">
-		  							</a>
-		  						</div>
-		  						<h2 class="news-title"><%= page.title %></h2>
-		  						<div class="news-media"></div>
-		  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
-		  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
-		  						&nbsp;
-		  						<span style="font-size:12px"><%= page.updated_at%></span>
-		  					</div>
-		  				</div>
-		  			<% if i % 2 == 1 %>
+<!-- ==============================================
+PORTFOLIO
+=============================================== -->		
+<section id="<%= nav_id[2]%>" class="gray-bg padding-top-bottom poro" >
+	<div class="container">
+		<h1 class="section-title">案例</h1>
+		<p class="section-description">CASE</p>
+		<div class="projects-container scrollimation">
+			<div class="row poro_1">
+				<% Admin::Page.where(channel_id:3).recent(6).each do |page| %>		
+					<article class="col-md-4 col-sm-6 project-item web-design apps psd">
+						<div class="project-thumb">
+							<span class="main-link">
+								<img class="img-responsive img-center" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1') %>" alt="<%= page.description %>" />
+								<h2 class="project-title">
+									<%= page.title %>
+								</h2>
+								<span class="overlay-mask"></span>
+							</span>
+							<a class="enlarge" href="<%= page.image_path %>" title="<%= page.title %>">
+								<i class="fa fa-expand fa-fw"></i>
+							</a>
+							<a class="link" href="<%= get_url(page) %>">
+								<i class="fa fa-eye fa-fw"></i>
+							</a>
 						</div>
-						<% end %>
-					<% end %>
-				</div>
-				<p class="text-center">
-					<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
-				</p>
-				<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
+					</article>
+				<% end %>
 			</div>
+		</div>
+		<p class="text-center">		
+			<a class="btn btn-qubico" href="<%= get_url(Admin::Channel.find_by(id:3))%>">
+				<i class="fa fa-plus-circle"></i>
+				更多案例
+			</a>
+		</p>
 
-		</section>	
+	</div>
+	<!-- End container -->		
+
+	<!--End #project-preview panel-->		
+</section>
+
+<!-- ==============================================
+NEWS
+=============================================== -->	
+<section  class="white-bg padding-top-bottom">
+	<div class="container">
+		<h1 class="section-title">行业新闻·动态</h1>
+		<p class="section-description">NEWS</p>
+		<div class="timeline">
+			<% Admin::Page.recent(4).each_with_index do |page,i| %>
+  			<!-- 显示的新闻数目 -->
+				<% if i % 2 == 0 %>
+				  <div class='row'>
+				<% end %>
+  				<div class="col-sm-6 news-item  <%= i % 2 == 0 ?  "left" : 'right' %> scrollimation fade-up">
+  					<div class="news-content">
+  						<div class="date"  style="border:1px solid #ccc">
+  							<a class="colorbox" href="<%= page.image_path%>" style="overflow: hidden;">
+  								<img class="img-responsive" src="<%= page.image_path.sub(/\.(jpg|png)$/,'_lit.\1')%>" alt=""/ height="100px">
+  							</a>
+  						</div>
+  						<h2 class="news-title"><%= page.title %></h2>
+  						<div class="news-media"></div>
+  						<p><a href="<%= get_url(page) %>" style="color:#000"><%= page.description.truncate(80) %>&hellip;</a></p>
+  						<a class="read-more" href="<%= get_url(page) %>">点击详情</a>
+  						&nbsp;
+  						<span style="font-size:12px"><%= page.updated_at%></span>
+  					</div>
+  				</div>
+  			<% if i % 2 == 1 %>
+				</div>
+				<% end %>
+			<% end %>
+		</div>
+		<p class="text-center">
+			<!-- <a class="btn btn-qubico" href="#" title="点击显示更多">MORE</a> -->
+		</p>
+		<!-- 每一列显示固定数目新闻列；点击加载下一页新闻列表 -->
+	</div>
+</section>	
    	
 <%= render file:  'public/templetes/'+@templete+'/_footer.html' %>
+
+
