@@ -1,6 +1,10 @@
 
-
-
+.titile-right{color: #777;font-size:18px;margin-left: 10px;}
+.border-right{border-right:1px solid red}
+@media (max-width: 768px) { 
+		.titile-right{display: none;}
+		.border-right{border:none;}
+}
 /*解决方案*/
 
 	.do-all{padding-top:50px;max-height:400px;height: 400px; box-shadow: 1px 1px 20px;}
