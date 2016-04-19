@@ -1,9 +1,13 @@
 
+/**
 
-.border-right{border-right:1px solid red;position: relative;}
-.title-box{position:absolute;top:0px;left:23%;}
-.titile-right1{color: #ec2c2c;font-size:20px;margin-left: 10px;margin-bottom: 0px;margin-top: 20px;}
-.titile-right2{color: #777;font-size:18px;margin-left: 10px;}
+.title-box{position:relative;}
+.titile-right1{position:absolute;top:0px;left:30%;color: #ec2c2c;font-size:20px;margin-left: 10px;margin-bottom: 0px;margin-top: 20px;}
+.titile-right2{position:absolute;top:0px;left:30%;color: #777;font-size:18px;margin-left: 10px;}
+**/
+.border-right{border-right:1px solid #ec2c2c;}
+
+.add-navbar{margin-top: 0px;}
 
 @media (max-width: 768px) { 
 		.titile-right1{display: none;}

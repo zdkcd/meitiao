@@ -419,12 +419,12 @@ ol, ul {
 
   }
   #sequence.perspective .view2{
-    -webkit-transform: translate(0%,40%) rotateX(0deg) rotateZ(0deg);
-  transform: translate(0%,40%) rotateX(0deg) rotateZ(0deg);
+    -webkit-transform: translate(0%,25%) rotateX(0deg) rotateZ(0deg);
+  transform: translate(0%,25%) rotateX(0deg) rotateZ(0deg);
   }
   #sequence.perspective .view3{
-    -webkit-transform: translate(-20%,25%) rotateX(0deg) rotateZ(0deg);
-  transform: translate(-20%,25%) rotateX(0deg) rotateZ(0deg);
+    -webkit-transform: translate(-20%,20%) rotateX(0deg) rotateZ(0deg);
+  transform: translate(-20%,20%) rotateX(0deg) rotateZ(0deg);
   }
 /*end*/
 .no-csstransforms3d #sequence.perspective .perspective-view{
