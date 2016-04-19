@@ -2,65 +2,60 @@
 <%= render file: '/public/templetes/'+@templete+'/_header.html' %>
 
 <div style="overflow:auto;overflow-x: hidden;">
+	<section id="services" class="white-bg padding-top-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-12">
+					<p>
+						<h2>企业简介</h2>
+					</p>
+					<p class="add-about-size">成都美调科技有限公司于2014年成立</p>
+					<p class="add-about-size">公司核心团队由十多位具有10多年软件技术开发经验的国内外优秀人才组成。前身为对美技术外包团队，擅长美国互联网前沿技术，崇尚硅谷创业模式，自主研发有核心技术，曾开发并维护美国拥有上千万用户级的网站，并在网络数据采集，大数据解析方面具有突出的能力。</p>
+					<p class="add-about-size">我们是国内首家专注于餐饮供应链企业互联网营销系统建设的互联网公司，是专业的互联网服务解决方案提供商和网络营销服务专家。</p>
+					<p class="add-about-size">我们拥有国内调味品行业营销专家、美国硅谷创新技术团队、知名网络公司精英等优秀人才。</p>
+					<p class="add-about-size">我们将计算机技术与商业应用完美结合起来，以使我们的客户可以在快速发展的信息科技领域中获得更有效的竞争力。</p>
+					<div class="row">
+						
+							<p>
+								<h2>企业愿景</h2>
+							</p>
+							<ul>
+								<li class="add-about-li">美调科技秉承“尽心服务每个客户”，“一流的服务保证”的宗旨理念</li>
+								<li class="add-about-li">致力于帮助全国餐饮供应链领域企业走上电子商务的信息平台</li>
+								<li class="add-about-li">致力于为您推出品牌营销型网站设计与互联网品牌的打造</li>
+								<li class="add-about-li">致力于让企业从信息科技的应用中获得最大的收益</li>
+								<li class="add-about-li">致力于全国餐饮品牌的互联网专业营销推广</li>
+							</ul>
+						<div class="col-lg-5">
+							<p>
+								<h2>主营业务</h2>
+							</p>
+							<ul>
+								<li class="add-about-li">网络营销推广</li>
+								<li class="add-about-li">行业平台开发</li>
+								<li class="add-about-li">微信公众号开发</li>
+								<li class="add-about-li">APP开发和应用软件开发</li>
+								<li class="add-about-li">专业化的网站管理和网站优化</li>
+								<li class="add-about-li">以互联网营销为核心目标的网站建设</li>
+								<li class="add-about-li">网络应用系统定制开发和网络基础业务等领域</li>
+							</ul>
 
-<section id="services" class="white-bg padding-top-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-12">
-				<p>
-					<h2> <strong><%= @channel.title %></strong>
-					</h2>
-				</p>
-				<hr/>
-				<%=raw @channel.content %>
-					<!--<h1 style="color:#666;">
-						团队介绍:
-					</h1>
-					<hr/>
-					 <div class="row">
-					<%# Admin::Page.where("`channel_id`='10'").all.each do |page| %>
-						<div id="about-shadow" class="col-lg-4">
-							<img src="<%#= page.image_path %>" class="img-responsive about-img1" data-toggle="modal" data-target="#myModal">
-							<p class="text-center"><span class="about-span1"><%#= page.title %></span><br/><%#= page.keywords %></p> -->
-							<!-- 弹出层 -->
-							<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-						    	<div class="modal-dialog" role="document">
-						    		<div class="modal-content about-modal-mar">
-						    			<div class="modal-header">
-						    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						    					<span aria-hidden="true">&times;</span>
-						    				</button>
-												<img src="/templetes/meetiao/assets/tou/tou1.jpg" class="img-responsive about-img2"data-toggle="modal" data-target="#myModal">
-											<h4 class="modal-title text-center" id="myModalLabel">
-												<span class="about-span2"><%#= page.title %></span>
-											</h4>
-												<h5 class="about-h5-one">
-												<span>个人简介:</span>
-												</h5>
-						    			</div>
-						    			<div class="modal-body">
-						    				<p class="about-content"><%#= page.description %></p>
-						    			</div>
-						    		</div>
-						    	</div>
-					    	</div> -->
-						<!-- </div>
-					<%# end %>
-					</div> -->
-
-					
-					
-
-			</div>
-
-			<div class="col-lg-3 col-md-12">
-				<%= render file: '/public/templetes/'+@templete+'/_slider.html'%>
-				<!-- Button trigger modal -->    
-    			
+							<div class="add-about-left">
+								<p>技术连接一切，美调创新生活</p>
+								<small class="add-about-heng"></small>
+								<cite title="tanmer.com">meetiao.com</cite>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<img src="/templetes/meetiao/assets/slider/perspective/team1.png" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12">
+					<%= render file: '/public/templetes/'+@templete+'/_slider.html'%>  
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<%= render file: '/public/templetes/'+@templete+'/_footer.html' %>
-
+	</section>
+	<%= render file: '/public/templetes/'+@templete+'/_footer.html' %>
 </div>
